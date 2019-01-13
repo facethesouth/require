@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name require)(type KiCad)(uri /home/ma/require/hardware/misc.pretty)(options "")(descr ""))
+)

@@ -1,0 +1,46 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SY8088AAC
+D 1A DC-DC Step Down
+$ENDCMP
+#
+$CMP SY8089AAC
+D 1A DC-DC Step Down
+$ENDCMP
+#
+$CMP VCC5V0_SYS
+D power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
+$CMP VCCIO_FLASH
+D power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
+$CMP VCCIO_SDIO
+D power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
+$CMP VCCIO_SDMMC
+D power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
+$CMP VCC_DDR
+D power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
+$CMP VCC_IO
+D power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
+$CMP VDD_CORE
+D power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
+#End Doc Library

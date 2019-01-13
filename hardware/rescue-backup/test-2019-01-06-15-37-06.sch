@@ -1,0 +1,190 @@
+EESchema Schematic File Version 2
+LIBS:require
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:require-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Conn_01x02 J1
+U 1 1 5C2DA1AF
+P 2000 2850
+F 0 "J1" H 2000 2950 50  0000 C CNN
+F 1 "Conn_01x02" H 2000 2650 50  0000 C CNN
+F 2 "Connectors_JST:JST_EH_B02B-EH-A_02x2.50mm_Straight" H 2000 2850 50  0001 C CNN
+F 3 "" H 2000 2850 50  0001 C CNN
+	1    2000 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC5V0_SYS #PWR010
+U 1 1 5C2DA241
+P 1050 2750
+F 0 "#PWR010" H 1050 2600 50  0001 C CNN
+F 1 "VCC5V0_SYS" H 1050 2900 50  0000 C CNN
+F 2 "" H 1050 2750 50  0001 C CNN
+F 3 "" H 1050 2750 50  0001 C CNN
+	1    1050 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 2850 1800 2850
+$Comp
+L GND #PWR011
+U 1 1 5C2DA265
+P 1050 3050
+F 0 "#PWR011" H 1050 2800 50  0001 C CNN
+F 1 "GND" H 1050 2900 50  0000 C CNN
+F 2 "" H 1050 3050 50  0001 C CNN
+F 3 "" H 1050 3050 50  0001 C CNN
+	1    1050 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 2950 1800 2950
+$Comp
+L PWR_FLAG #FLG012
+U 1 1 5C2DA3A5
+P 1600 2750
+F 0 "#FLG012" H 1600 2825 50  0001 C CNN
+F 1 "PWR_FLAG" H 1600 2900 50  0000 C CNN
+F 2 "" H 1600 2750 50  0001 C CNN
+F 3 "" H 1600 2750 50  0001 C CNN
+	1    1600 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 2750 1600 2850
+Connection ~ 1600 2850
+$Comp
+L PWR_FLAG #FLG013
+U 1 1 5C2DA3DF
+P 1600 3050
+F 0 "#FLG013" H 1600 3125 50  0001 C CNN
+F 1 "PWR_FLAG" H 1600 3200 50  0000 C CNN
+F 2 "" H 1600 3050 50  0001 C CNN
+F 3 "" H 1600 3050 50  0001 C CNN
+	1    1600 3050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1600 3050 1600 2950
+Connection ~ 1600 2950
+Wire Wire Line
+	1050 2750 1050 2850
+Wire Wire Line
+	1050 2950 1050 3050
+$Comp
+L microSD-13p J9100
+U 1 1 5C2E132C
+P 3700 3100
+F 0 "J9100" H 3700 3050 60  0000 L CNN
+F 1 "microSD-13p" H 3700 2950 60  0000 L CNN
+F 2 "require:xunpu_microSD_tf_115" H 3700 3100 60  0001 C CNN
+F 3 "" H 3700 3100 60  0001 C CNN
+	1    3700 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2200 4900 2200
+Wire Wire Line
+	4900 2200 4900 2750
+$Comp
+L GND #PWR014
+U 1 1 5C2E138F
+P 4900 2750
+F 0 "#PWR014" H 4900 2500 50  0001 C CNN
+F 1 "GND" H 4900 2600 50  0000 C CNN
+F 2 "" H 4900 2750 50  0001 C CNN
+F 3 "" H 4900 2750 50  0001 C CNN
+	1    4900 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2300 4900 2300
+Connection ~ 4900 2300
+Wire Wire Line
+	4700 2400 4900 2400
+Connection ~ 4900 2400
+Wire Wire Line
+	4700 2500 4900 2500
+Connection ~ 4900 2500
+Wire Wire Line
+	3500 2700 3200 2700
+$Comp
+L GND #PWR015
+U 1 1 5C2E144A
+P 3200 2700
+F 0 "#PWR015" H 3200 2450 50  0001 C CNN
+F 1 "GND" H 3200 2550 50  0000 C CNN
+F 2 "" H 3200 2700 50  0001 C CNN
+F 3 "" H 3200 2700 50  0001 C CNN
+	1    3200 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3500 2500 3300 2500
+Wire Wire Line
+	3300 2500 3300 2700
+Connection ~ 3300 2700
+NoConn ~ 3500 2200
+NoConn ~ 3500 2300
+NoConn ~ 3500 2400
+NoConn ~ 3500 2600
+NoConn ~ 3500 2800
+NoConn ~ 3500 2900
+NoConn ~ 3500 3000
+$Comp
+L ap6255 U6000
+U 1 1 5C2E29DF
+P 3450 5100
+F 0 "U6000" H 3450 5150 60  0000 C CNN
+F 1 "ap6255" H 3450 5050 60  0000 C CNN
+F 2 "require:AP6255_QFP_44" H 3450 5100 60  0001 C CNN
+F 3 "" H 3450 5100 60  0001 C CNN
+	1    3450 5100
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

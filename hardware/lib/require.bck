@@ -18,7 +18,7 @@ D power-flag symbol
 K Power Flag Symbol
 $ENDCMP
 #
-$CMP VCCIO_SDIO_0
+$CMP VCCIO_SDIO
 D power-flag symbol
 K Power Flag Symbol
 $ENDCMP
@@ -38,7 +38,12 @@ D power-flag symbol
 K Power Flag Symbol
 $ENDCMP
 #
-$CMP VDD_CORE
+$CMP VDD_CORE_0
+D power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
+$CMP VDD_LOG
 D power-flag symbol
 K Power Flag Symbol
 $ENDCMP

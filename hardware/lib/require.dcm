@@ -43,4 +43,9 @@ D power-flag symbol
 K Power Flag Symbol
 $ENDCMP
 #
+$CMP VDD_LOG
+D power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
 #End Doc Library

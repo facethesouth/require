@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 4 7
+Sheet 4 8
 Title ""
 Date ""
 Rev ""
@@ -591,44 +591,33 @@ Wire Wire Line
 	2150 4900 2550 4900
 Connection ~ 3750 4900
 $Comp
-L Device:C C10
-U 1 1 5C59BB3D
-P 3350 5250
-F 0 "C10" H 3465 5296 50  0000 L CNN
-F 1 "C" H 3465 5205 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 3388 5100 50  0001 C CNN
-F 3 "~" H 3350 5250 50  0001 C CNN
-	1    3350 5250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C9
+L Device:C C312
 U 1 1 5C59BC64
 P 2950 5250
-F 0 "C9" H 3065 5296 50  0000 L CNN
-F 1 "C" H 3065 5205 50  0000 L CNN
+F 0 "C312" H 3065 5296 50  0000 L CNN
+F 1 "0.1u" H 3065 5205 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0402" H 2988 5100 50  0001 C CNN
 F 3 "~" H 2950 5250 50  0001 C CNN
 	1    2950 5250
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C8
+L Device:C C311
 U 1 1 5C59BCE6
 P 2550 5250
-F 0 "C8" H 2665 5296 50  0000 L CNN
-F 1 "C" H 2665 5205 50  0000 L CNN
+F 0 "C311" H 2665 5296 50  0000 L CNN
+F 1 "0.1u" H 2665 5205 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0402" H 2588 5100 50  0001 C CNN
 F 3 "~" H 2550 5250 50  0001 C CNN
 	1    2550 5250
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C7
+L Device:C C310
 U 1 1 5C59BD5B
 P 2150 5250
-F 0 "C7" H 2265 5296 50  0000 L CNN
-F 1 "C" H 2265 5205 50  0000 L CNN
+F 0 "C310" H 2265 5296 50  0000 L CNN
+F 1 "10u" H 2265 5205 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 2188 5100 50  0001 C CNN
 F 3 "~" H 2150 5250 50  0001 C CNN
 	1    2150 5250
@@ -646,17 +635,6 @@ Wire Wire Line
 	2950 5100 2950 4900
 Connection ~ 2950 4900
 Wire Wire Line
-	2950 4900 3350 4900
-Wire Wire Line
-	3350 5100 3350 4900
-Connection ~ 3350 4900
-Wire Wire Line
-	3350 4900 3750 4900
-Wire Wire Line
-	3350 5400 3350 5600
-Wire Wire Line
-	3350 5600 2950 5600
-Wire Wire Line
 	2150 5600 2150 5400
 Wire Wire Line
 	2550 5400 2550 5600
@@ -665,7 +643,6 @@ Wire Wire Line
 	2550 5600 2150 5600
 Wire Wire Line
 	2950 5400 2950 5600
-Connection ~ 2950 5600
 Wire Wire Line
 	2950 5600 2550 5600
 Wire Wire Line
@@ -1391,49 +1368,6 @@ F 3 "" H 2950 7800 50  0001 C CNN
 $EndComp
 $Comp
 L require-rescue:C C?
-U 1 1 5D112053
-P 3500 8150
-AR Path="/5D112053" Ref="C?"  Part="1" 
-AR Path="/5C2CD8AE/5D112053" Ref="C?"  Part="1" 
-AR Path="/5C325762/5D112053" Ref="C?"  Part="1" 
-AR Path="/5C2F0873/5D112053" Ref="C302"  Part="1" 
-F 0 "C302" H 3600 8200 50  0000 L CNN
-F 1 "1n" H 3600 8100 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 3538 8000 50  0001 C CNN
-F 3 "" H 3500 8150 50  0001 C CNN
-	1    3500 8150
-	1    0    0    -1  
-$EndComp
-$Comp
-L require-rescue:GND #PWR?
-U 1 1 5D11205A
-P 3500 8500
-AR Path="/5C2CD8AE/5D11205A" Ref="#PWR?"  Part="1" 
-AR Path="/5C325762/5D11205A" Ref="#PWR?"  Part="1" 
-AR Path="/5C2F0873/5D11205A" Ref="#PWR0156"  Part="1" 
-F 0 "#PWR0156" H 3500 8250 50  0001 C CNN
-F 1 "GND" H 3500 8350 50  0000 C CNN
-F 2 "" H 3500 8500 50  0001 C CNN
-F 3 "" H 3500 8500 50  0001 C CNN
-	1    3500 8500
-	1    0    0    -1  
-$EndComp
-$Comp
-L require-rescue:VDD_CORE #PWR?
-U 1 1 5D112060
-P 7050 7500
-AR Path="/5C2CD8AE/5D112060" Ref="#PWR?"  Part="1" 
-AR Path="/5C325762/5D112060" Ref="#PWR?"  Part="1" 
-AR Path="/5C2F0873/5D112060" Ref="#PWR0157"  Part="1" 
-F 0 "#PWR0157" H 7050 7350 50  0001 C CNN
-F 1 "VDD_CORE" H 7050 7650 50  0000 C CNN
-F 2 "" H 7050 7500 50  0001 C CNN
-F 3 "" H 7050 7500 50  0001 C CNN
-	1    7050 7500
-	1    0    0    -1  
-$EndComp
-$Comp
-L require-rescue:C C?
 U 1 1 5D112066
 P 6050 7950
 AR Path="/5C2CD8AE/5D112066" Ref="C?"  Part="1" 
@@ -1496,11 +1430,7 @@ Wire Wire Line
 	2400 7500 2400 7600
 Wire Wire Line
 	3700 7700 3500 7700
-Wire Wire Line
-	3100 7800 3500 7800
 Connection ~ 2400 7600
-Wire Wire Line
-	3500 8300 3500 8500
 Wire Wire Line
 	6050 8100 6050 8300
 Connection ~ 2400 7800
@@ -1520,38 +1450,8 @@ F 3 "" H 4800 7600 50  0001 C CNN
 	1    4800 7600
 	0    -1   -1   0   
 $EndComp
-$Comp
-L require-rescue:C C?
-U 1 1 5D112092
-P 7050 7950
-AR Path="/5C2CD8AE/5D112092" Ref="C?"  Part="1" 
-AR Path="/5C325762/5D112092" Ref="C?"  Part="1" 
-AR Path="/5C2F0873/5D112092" Ref="C305"  Part="1" 
-F 0 "C305" H 7150 8000 50  0000 L CNN
-F 1 "0.1u" H 7150 7900 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 7088 7800 50  0001 C CNN
-F 3 "" H 7050 7950 50  0001 C CNN
-	1    7050 7950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6050 7600 6050 7800
-$Comp
-L require-rescue:GND #PWR?
-U 1 1 5D11209A
-P 7050 8300
-AR Path="/5C2CD8AE/5D11209A" Ref="#PWR?"  Part="1" 
-AR Path="/5C325762/5D11209A" Ref="#PWR?"  Part="1" 
-AR Path="/5C2F0873/5D11209A" Ref="#PWR0160"  Part="1" 
-F 0 "#PWR0160" H 7050 8050 50  0001 C CNN
-F 1 "GND" H 7050 8150 50  0000 C CNN
-F 2 "" H 7050 8300 50  0001 C CNN
-F 3 "" H 7050 8300 50  0001 C CNN
-	1    7050 8300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7050 8100 7050 8300
 $Comp
 L require-rescue:R R?
 U 1 1 5D1120A1
@@ -1573,8 +1473,6 @@ Wire Wire Line
 	2800 7800 2400 7800
 Wire Wire Line
 	2400 7600 2400 7800
-Wire Wire Line
-	7050 7600 7050 7800
 $Comp
 L require:SY8089AAC U?
 U 1 1 5D1120AD
@@ -1642,12 +1540,7 @@ Wire Wire Line
 Wire Wire Line
 	4450 7600 4650 7600
 Wire Wire Line
-	3500 7800 3500 8000
-Wire Wire Line
 	2400 7800 2400 8000
-Connection ~ 3500 7800
-Wire Wire Line
-	3500 7800 3700 7800
 Connection ~ 5250 8500
 Wire Wire Line
 	5250 8500 5250 8700
@@ -1665,48 +1558,57 @@ Wire Wire Line
 	4800 9200 5250 9200
 Wire Wire Line
 	4450 7800 4800 7800
-$Comp
-L require-rescue:C C?
-U 1 1 5D1120DB
-P 1650 8150
-AR Path="/5D1120DB" Ref="C?"  Part="1" 
-AR Path="/5C2CD8AE/5D1120DB" Ref="C?"  Part="1" 
-AR Path="/5C325762/5D1120DB" Ref="C?"  Part="1" 
-AR Path="/5C2F0873/5D1120DB" Ref="C300"  Part="1" 
-F 0 "C300" H 1750 8200 50  0000 L CNN
-F 1 "0.1u,10V" H 1750 8100 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 1688 8000 50  0001 C CNN
-F 3 "" H 1650 8150 50  0001 C CNN
-	1    1650 8150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5D1120E2
-P 1650 8500
-AR Path="/5C325762/5D1120E2" Ref="#PWR?"  Part="1" 
-AR Path="/5C2F0873/5D1120E2" Ref="#PWR0173"  Part="1" 
-F 0 "#PWR0173" H 1650 8250 50  0001 C CNN
-F 1 "GND" H 1655 8327 50  0000 C CNN
-F 2 "" H 1650 8500 50  0001 C CNN
-F 3 "" H 1650 8500 50  0001 C CNN
-	1    1650 8500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1650 8500 1650 8300
-Wire Wire Line
-	1650 8000 1650 7600
-Connection ~ 7050 7600
-Wire Wire Line
-	7050 7500 7050 7600
-Wire Wire Line
-	6050 7600 7050 7600
-Connection ~ 6050 7600
-Wire Wire Line
-	1650 7600 2400 7600
 Wire Wire Line
 	5250 7600 6050 7600
 Wire Wire Line
 	5250 7600 5250 8500
+$Comp
+L require:VCC_DDR #PWR0157
+U 1 1 5C4182E4
+P 6050 7500
+F 0 "#PWR0157" H 6050 7350 50  0001 C CNN
+F 1 "VCC_DDR" H 6067 7673 50  0000 C CNN
+F 2 "" H 6050 7500 50  0001 C CNN
+F 3 "" H 6050 7500 50  0001 C CNN
+	1    6050 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 7800 3700 7800
+$Comp
+L require-rescue:C C?
+U 1 1 5C488E4A
+P 1800 8150
+AR Path="/5C2CD8AE/5C488E4A" Ref="C?"  Part="1" 
+AR Path="/5C325762/5C488E4A" Ref="C?"  Part="1" 
+AR Path="/5C2F0873/5C488E4A" Ref="C300"  Part="1" 
+F 0 "C300" H 1900 8200 50  0000 L CNN
+F 1 "0.1u,10V" H 1900 8100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 1838 8000 50  0001 C CNN
+F 3 "" H 1800 8150 50  0001 C CNN
+	1    1800 8150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 8300 1800 8500
+$Comp
+L power:GND #PWR0156
+U 1 1 5C4A78F6
+P 1800 8500
+F 0 "#PWR0156" H 1800 8250 50  0001 C CNN
+F 1 "GND" H 1805 8327 50  0000 C CNN
+F 2 "" H 1800 8500 50  0001 C CNN
+F 3 "" H 1800 8500 50  0001 C CNN
+	1    1800 8500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 8000 1800 7600
+Wire Wire Line
+	1800 7600 2400 7600
+Wire Wire Line
+	6050 7600 6050 7500
+Connection ~ 6050 7600
+Wire Wire Line
+	2950 4900 3750 4900
 $EndSCHEMATC

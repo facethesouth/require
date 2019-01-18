@@ -33,7 +33,7 @@ F0 "ddr" 60
 F1 "ddr.sch" 60
 $EndSheet
 $Sheet
-S 900  950  1600 800 
+S 850  1150 1400 1250
 U 5C325762
 F0 "rk3308-power" 50
 F1 "rk3308-power.sch" 50

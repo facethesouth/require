@@ -28,6 +28,21 @@ D power-flag symbol
 K Power Flag Symbol
 $ENDCMP
 #
+$CMP VCC_1V8
+D power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
+$CMP VCC_1V8_CODEC
+D power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
+$CMP VCC_3V3_CODEC
+D power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
 $CMP VCC_DDR
 D power-flag symbol
 K Power Flag Symbol
@@ -38,12 +53,22 @@ D power-flag symbol
 K Power Flag Symbol
 $ENDCMP
 #
-$CMP VDD_CORE_0
+$CMP VDD_1V0
+D power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
+$CMP VDD_CORE
 D power-flag symbol
 K Power Flag Symbol
 $ENDCMP
 #
 $CMP VDD_LOG
+D power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
+$CMP VDD_USB_PLL_1V0
 D power-flag symbol
 K Power Flag Symbol
 $ENDCMP

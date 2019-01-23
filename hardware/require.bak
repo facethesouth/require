@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 1 9
 Title ""
 Date ""
 Rev ""
@@ -33,7 +33,7 @@ F0 "ddr" 60
 F1 "ddr.sch" 60
 $EndSheet
 $Sheet
-S 850  1150 1400 1250
+S 7400 2400 1400 1250
 U 5C325762
 F0 "rk3308-power" 50
 F1 "rk3308-power.sch" 50
@@ -45,7 +45,7 @@ F0 "rk3308-acodec" 50
 F1 "rk3308-acodec.sch" 50
 $EndSheet
 $Sheet
-S 5700 4400 900  1650
+S 4050 950  900  1650
 U 5CDAE2B6
 F0 "emmc" 50
 F1 "emmc.sch" 50
@@ -55,5 +55,11 @@ S 4600 6500 900  550
 U 5C70CDE2
 F0 "rk3308-lcdc-mac-i2s1-jtag" 50
 F1 "rk3308-lcdc-mac-i2s1-jtag.sch" 50
+$EndSheet
+$Sheet
+S 5500 4100 1550 1200
+U 5CED3BD3
+F0 "usb" 50
+F1 "usb.sch" 50
 $EndSheet
 $EndSCHEMATC

@@ -1,11 +1,26 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP AVDD_1V0
+D power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
+$CMP AVDD_1V8
+D power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
 $CMP SY8088AAC
 D 1A DC-DC Step Down
 $ENDCMP
 #
 $CMP SY8089AAC
 D 1A DC-DC Step Down
+$ENDCMP
+#
+$CMP USB_VDD_1V8
+D power-flag symbol
+K Power Flag Symbol
 $ENDCMP
 #
 $CMP VCC5V0_SYS

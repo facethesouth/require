@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 9
+Sheet 9 10
 Title ""
 Date ""
 Rev ""
@@ -31,8 +31,6 @@ Wire Wire Line
 	2200 1100 3050 1100
 Wire Wire Line
 	2200 1800 3050 1800
-Wire Wire Line
-	2200 1900 3050 1900
 $Comp
 L Device:R R93
 U 1 1 5CED3D45
@@ -372,4 +370,28 @@ Wire Wire Line
 Wire Wire Line
 	6900 3450 6900 3050
 Connection ~ 6900 3050
+$Comp
+L require:OP LP11
+U 1 1 5C4F0BF5
+P 3250 1800
+F 0 "LP11" H 3500 1800 50  0000 C CNN
+F 1 "DM" H 3250 1800 50  0000 C CNN
+F 2 "require:OVAL_PIN" H 3250 1800 50  0001 C CNN
+F 3 "" H 3250 1800 50  0001 C CNN
+	1    3250 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L require:OP LP12
+U 1 1 5C4F0C66
+P 3250 1900
+F 0 "LP12" H 3500 1900 50  0000 C CNN
+F 1 "DP" H 3250 1900 50  0000 C CNN
+F 2 "require:OVAL_PIN" H 3250 1900 50  0001 C CNN
+F 3 "" H 3250 1900 50  0001 C CNN
+	1    3250 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1900 3050 1900
 $EndSCHEMATC

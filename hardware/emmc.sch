@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 9
+Sheet 7 10
 Title ""
 Date ""
 Rev ""
@@ -225,9 +225,6 @@ Wire Wire Line
 Wire Wire Line
 	5550 4050 5550 4150
 NoConn ~ 7600 3450
-NoConn ~ 3650 3450
-NoConn ~ 3650 3650
-NoConn ~ 3650 3750
 Wire Wire Line
 	3650 4150 3850 4150
 Wire Wire Line
@@ -509,4 +506,31 @@ F 3 "" H 5550 4050 50  0001 C CNN
 $EndComp
 Text Notes 3750 4350 0    50   ~ 10
 Share cap with R11, T11
+Wire Wire Line
+	3650 3650 4400 3650
+Wire Wire Line
+	3650 3750 4400 3750
+$Comp
+L require:OP P13
+U 1 1 5C5EA528
+P 4600 3650
+F 0 "P13" H 4800 3650 50  0000 C CNN
+F 1 "1" H 4600 3650 50  0000 C CNN
+F 2 "require:OVAL_PIN" H 4600 3600 50  0001 C CNN
+F 3 "" H 4600 3600 50  0001 C CNN
+	1    4600 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L require:OP P14
+U 1 1 5C5EA552
+P 4600 3750
+F 0 "P14" H 4800 3750 50  0000 C CNN
+F 1 "2" H 4600 3750 50  0000 C CNN
+F 2 "require:OVAL_PIN" H 4600 3700 50  0001 C CNN
+F 3 "" H 4600 3700 50  0001 C CNN
+	1    4600 3750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3650 3450
 $EndSCHEMATC

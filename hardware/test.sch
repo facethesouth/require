@@ -727,7 +727,7 @@ F 3 "" H 12650 5850 50  0001 C CNN
 	1    12650 5850
 	1    0    0    -1  
 $EndComp
-Text Notes 12000 6200 0    50   ~ 10
+Text Notes 13300 5850 0    50   ~ 10
 Use SDIO 2.0 (3V3)
 $Comp
 L require:VCC_IO #PWR0199
@@ -796,10 +796,6 @@ Wire Wire Line
 	12150 6050 11200 6050
 Text Label 11200 6050 0    50   ~ 0
 LPO
-NoConn ~ 12250 5650
-NoConn ~ 12350 5650
-NoConn ~ 12450 5650
-NoConn ~ 12550 5650
 $Comp
 L Device:C C9
 U 1 1 5D14135C
@@ -1216,4 +1212,28 @@ F 3 "" H 8300 9100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4100 2700 5850 2700
+Wire Wire Line
+	12550 5650 12550 6400
+Wire Wire Line
+	12550 6400 13200 6400
+Wire Wire Line
+	12450 5650 12450 6550
+Wire Wire Line
+	12450 6550 13200 6550
+Wire Wire Line
+	12350 5650 12350 6700
+Wire Wire Line
+	12350 6700 13200 6700
+Wire Wire Line
+	12250 5650 12250 6850
+Wire Wire Line
+	12250 6850 13200 6850
+Text Label 12650 6400 0    50   ~ 0
+PCM_SYNC
+Text Label 12650 6550 0    50   ~ 0
+PCM_IN
+Text Label 12650 6700 0    50   ~ 0
+PCM_CLK
+Text Label 12650 6850 0    50   ~ 0
+PCM_OUT
 $EndSCHEMATC

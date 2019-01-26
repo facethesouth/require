@@ -427,7 +427,6 @@ Wire Wire Line
 	7000 1550 7000 2050
 Wire Wire Line
 	6200 1550 7000 1550
-NoConn ~ 6800 2250
 Wire Wire Line
 	7000 2250 6800 2050
 Wire Wire Line
@@ -566,4 +565,7 @@ F 3 "" H 5550 2500 50  0001 C CNN
 	1    5550 2500
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7000 2250 6800 2250
+Connection ~ 7000 2250
 $EndSCHEMATC

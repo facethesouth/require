@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 9 9
+Sheet 7 7
 Title ""
 Date ""
 Rev ""
@@ -45,116 +45,12 @@ Text Label 4300 2900 0    50   ~ 0
 PWM2
 Text Label 4300 3000 0    50   ~ 0
 PWM3
-$Comp
-L require:OP P?
-U 1 1 5C881031
-P 5150 2800
-AR Path="/5C2D00B3/5C881031" Ref="P?"  Part="1" 
-AR Path="/5C87E279/5C881031" Ref="RP17"  Part="1" 
-F 0 "RP17" H 5400 2800 50  0000 C CNN
-F 1 "16" H 5150 2800 50  0000 C CNN
-F 2 "require:OVAL_PIN" H 5150 2750 50  0001 C CNN
-F 3 "" H 5150 2750 50  0001 C CNN
-	1    5150 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L require:OP P?
-U 1 1 5C881038
-P 5150 2900
-AR Path="/5C2D00B3/5C881038" Ref="P?"  Part="1" 
-AR Path="/5C87E279/5C881038" Ref="RP18"  Part="1" 
-F 0 "RP18" H 5400 2900 50  0000 C CNN
-F 1 "17" H 5150 2900 50  0000 C CNN
-F 2 "require:OVAL_PIN" H 5150 2850 50  0001 C CNN
-F 3 "" H 5150 2850 50  0001 C CNN
-	1    5150 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L require:OP P?
-U 1 1 5C88103F
-P 5150 3000
-AR Path="/5C2D00B3/5C88103F" Ref="P?"  Part="1" 
-AR Path="/5C87E279/5C88103F" Ref="RP19"  Part="1" 
-F 0 "RP19" H 5400 3000 50  0000 C CNN
-F 1 "18" H 5150 3000 50  0000 C CNN
-F 2 "require:OVAL_PIN" H 5150 2950 50  0001 C CNN
-F 3 "" H 5150 2950 50  0001 C CNN
-	1    5150 3000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4100 1900 4950 1900
 Wire Wire Line
 	4100 2000 4950 2000
 Wire Wire Line
 	4100 2100 4950 2100
-$Comp
-L require:OP P?
-U 1 1 5C881049
-P 5150 1900
-AR Path="/5C2D00B3/5C881049" Ref="P?"  Part="1" 
-AR Path="/5C87E279/5C881049" Ref="RP12"  Part="1" 
-F 0 "RP12" H 5400 1900 50  0000 C CNN
-F 1 "11" H 5150 1900 50  0000 C CNN
-F 2 "require:OVAL_PIN" H 5150 1850 50  0001 C CNN
-F 3 "" H 5150 1850 50  0001 C CNN
-	1    5150 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L require:OP P?
-U 1 1 5C881050
-P 5150 2000
-AR Path="/5C2D00B3/5C881050" Ref="P?"  Part="1" 
-AR Path="/5C87E279/5C881050" Ref="RP13"  Part="1" 
-F 0 "RP13" H 5400 2000 50  0000 C CNN
-F 1 "12" H 5150 2000 50  0000 C CNN
-F 2 "require:OVAL_PIN" H 5150 1950 50  0001 C CNN
-F 3 "" H 5150 1950 50  0001 C CNN
-	1    5150 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L require:OP P?
-U 1 1 5C881057
-P 5150 2100
-AR Path="/5C2D00B3/5C881057" Ref="P?"  Part="1" 
-AR Path="/5C87E279/5C881057" Ref="RP14"  Part="1" 
-F 0 "RP14" H 5400 2100 50  0000 C CNN
-F 1 "13" H 5150 2100 50  0000 C CNN
-F 2 "require:OVAL_PIN" H 5150 2050 50  0001 C CNN
-F 3 "" H 5150 2050 50  0001 C CNN
-	1    5150 2100
-	1    0    0    -1  
-$EndComp
-$Comp
-L require:OP P?
-U 1 1 5C88105E
-P 5150 2200
-AR Path="/5C2D00B3/5C88105E" Ref="P?"  Part="1" 
-AR Path="/5C87E279/5C88105E" Ref="RP15"  Part="1" 
-F 0 "RP15" H 5400 2200 50  0000 C CNN
-F 1 "14" H 5150 2200 50  0000 C CNN
-F 2 "require:OVAL_PIN" H 5150 2150 50  0001 C CNN
-F 3 "" H 5150 2150 50  0001 C CNN
-	1    5150 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L require:OP P?
-U 1 1 5C881065
-P 5150 3200
-AR Path="/5C2D00B3/5C881065" Ref="P?"  Part="1" 
-AR Path="/5C87E279/5C881065" Ref="RP16"  Part="1" 
-F 0 "RP16" H 5400 3200 50  0000 C CNN
-F 1 "15" H 5150 3200 50  0000 C CNN
-F 2 "require:OVAL_PIN" H 5150 3150 50  0001 C CNN
-F 3 "" H 5150 3150 50  0001 C CNN
-	1    5150 3200
-	1    0    0    -1  
-$EndComp
 Text Label 4300 2700 0    50   ~ 0
 CORE_DVS
 Wire Wire Line
@@ -189,58 +85,6 @@ DIO9
 Text Label 4300 6900 0    50   ~ 0
 DIO10
 $Comp
-L require:OP P?
-U 1 1 5C8A4515
-P 5300 6600
-AR Path="/5C70CDE2/5C8A4515" Ref="P?"  Part="1" 
-AR Path="/5C87E279/5C8A4515" Ref="DIO7"  Part="1" 
-F 0 "DIO7" H 5550 6600 50  0000 C CNN
-F 1 "7" H 5300 6600 50  0000 C CNN
-F 2 "require:OVAL_PIN" H 5300 6550 50  0001 C CNN
-F 3 "" H 5300 6550 50  0001 C CNN
-	1    5300 6600
-	1    0    0    -1  
-$EndComp
-$Comp
-L require:OP P?
-U 1 1 5C8A451C
-P 5300 6700
-AR Path="/5C70CDE2/5C8A451C" Ref="P?"  Part="1" 
-AR Path="/5C87E279/5C8A451C" Ref="DIO8"  Part="1" 
-F 0 "DIO8" H 5550 6700 50  0000 C CNN
-F 1 "8" H 5300 6700 50  0000 C CNN
-F 2 "require:OVAL_PIN" H 5300 6650 50  0001 C CNN
-F 3 "" H 5300 6650 50  0001 C CNN
-	1    5300 6700
-	1    0    0    -1  
-$EndComp
-$Comp
-L require:OP P?
-U 1 1 5C8A4523
-P 5300 6800
-AR Path="/5C70CDE2/5C8A4523" Ref="P?"  Part="1" 
-AR Path="/5C87E279/5C8A4523" Ref="DIO9"  Part="1" 
-F 0 "DIO9" H 5550 6800 50  0000 C CNN
-F 1 "9" H 5300 6800 50  0000 C CNN
-F 2 "require:OVAL_PIN" H 5300 6750 50  0001 C CNN
-F 3 "" H 5300 6750 50  0001 C CNN
-	1    5300 6800
-	1    0    0    -1  
-$EndComp
-$Comp
-L require:OP P?
-U 1 1 5C8A452A
-P 5300 6900
-AR Path="/5C70CDE2/5C8A452A" Ref="P?"  Part="1" 
-AR Path="/5C87E279/5C8A452A" Ref="DIO10"  Part="1" 
-F 0 "DIO10" H 5550 6900 50  0000 C CNN
-F 1 "10" H 5300 6900 50  0000 C CNN
-F 2 "require:OVAL_PIN" H 5300 6850 50  0001 C CNN
-F 3 "" H 5300 6850 50  0001 C CNN
-	1    5300 6900
-	1    0    0    -1  
-$EndComp
-$Comp
 L require:RK3308 U1000
 U 4 1 5C8B044F
 P 1900 9400
@@ -259,58 +103,6 @@ Text Label 4250 7700 0    50   ~ 0
 DIO4
 Text Label 4250 7600 0    50   ~ 0
 DIO3
-$Comp
-L require:OP P?
-U 1 1 5C8B0BAE
-P 4950 7900
-AR Path="/5C70CDE2/5C8B0BAE" Ref="P?"  Part="1" 
-AR Path="/5C87E279/5C8B0BAE" Ref="DIO6"  Part="1" 
-F 0 "DIO6" H 5150 7900 50  0000 C CNN
-F 1 "6" H 4950 7900 50  0000 C CNN
-F 2 "require:OVAL_PIN" H 4950 7850 50  0001 C CNN
-F 3 "" H 4950 7850 50  0001 C CNN
-	1    4950 7900
-	1    0    0    -1  
-$EndComp
-$Comp
-L require:OP P?
-U 1 1 5C8B0BB5
-P 4950 7800
-AR Path="/5C70CDE2/5C8B0BB5" Ref="P?"  Part="1" 
-AR Path="/5C87E279/5C8B0BB5" Ref="DIO5"  Part="1" 
-F 0 "DIO5" H 5150 7800 50  0000 C CNN
-F 1 "5" H 4950 7800 50  0000 C CNN
-F 2 "require:OVAL_PIN" H 4950 7750 50  0001 C CNN
-F 3 "" H 4950 7750 50  0001 C CNN
-	1    4950 7800
-	1    0    0    -1  
-$EndComp
-$Comp
-L require:OP P?
-U 1 1 5C8B0BBC
-P 4950 7700
-AR Path="/5C70CDE2/5C8B0BBC" Ref="P?"  Part="1" 
-AR Path="/5C87E279/5C8B0BBC" Ref="DIO4"  Part="1" 
-F 0 "DIO4" H 5150 7700 50  0000 C CNN
-F 1 "4" H 4950 7700 50  0000 C CNN
-F 2 "require:OVAL_PIN" H 4950 7650 50  0001 C CNN
-F 3 "" H 4950 7650 50  0001 C CNN
-	1    4950 7700
-	1    0    0    -1  
-$EndComp
-$Comp
-L require:OP P?
-U 1 1 5C8B0BC3
-P 4950 7600
-AR Path="/5C70CDE2/5C8B0BC3" Ref="P?"  Part="1" 
-AR Path="/5C87E279/5C8B0BC3" Ref="DIO3"  Part="1" 
-F 0 "DIO3" H 5150 7600 50  0000 C CNN
-F 1 "3" H 4950 7600 50  0000 C CNN
-F 2 "require:OVAL_PIN" H 4950 7550 50  0001 C CNN
-F 3 "" H 4950 7550 50  0001 C CNN
-	1    4950 7600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4100 7900 4750 7900
 Wire Wire Line
@@ -322,153 +114,99 @@ Wire Wire Line
 $Comp
 L require:RK3308 U1000
 U 5 1 5C8BEDB2
-P 8300 3800
-F 0 "U1000" H 9086 5687 60  0000 C CNN
-F 1 "RK3308" H 9086 5581 60  0000 C CNN
-F 2 "" H 8300 3800 60  0001 C CNN
-F 3 "" H 8300 3800 60  0001 C CNN
-	5    8300 3800
+P 8300 2850
+F 0 "U1000" H 8500 4500 60  0000 C CNN
+F 1 "RK3308" H 8500 4400 60  0000 C CNN
+F 2 "" H 8300 2850 60  0001 C CNN
+F 3 "" H 8300 2850 60  0001 C CNN
+	5    8300 2850
 	1    0    0    -1  
 $EndComp
-Text Label 10700 2500 0    50   ~ 0
+Text Label 10700 1550 0    50   ~ 0
 FLASH_D1
-Text Label 10700 2600 0    50   ~ 0
+Text Label 10700 1650 0    50   ~ 0
 FLASH_D2
-Text Label 10700 2700 0    50   ~ 0
+Text Label 10700 1750 0    50   ~ 0
 FLASH_D3
-Text Label 10700 2800 0    50   ~ 0
+Text Label 10700 1850 0    50   ~ 0
 FLASH_D4
-Text Label 10700 2900 0    50   ~ 0
+Text Label 10700 1950 0    50   ~ 0
 FLASH_D5
-Text Label 10700 3000 0    50   ~ 0
+Text Label 10700 2050 0    50   ~ 0
 FLASH_D6
-Text Label 10700 3100 0    50   ~ 0
+Text Label 10700 2150 0    50   ~ 0
 FLASH_D7
-Text Label 10700 3200 0    50   ~ 0
+Text Label 10700 2250 0    50   ~ 0
 FLASH_CMD
-Text Label 10700 3300 0    50   ~ 0
+Text Label 10700 2350 0    50   ~ 0
 FLASH_CLK
-Text Label 10700 2400 0    50   ~ 0
+Text Label 10700 1450 0    50   ~ 0
 FLASH_D0
 Wire Wire Line
-	10500 3500 11350 3500
-Text Label 10700 3500 0    50   ~ 0
+	10500 2550 11350 2550
+Text Label 10700 2550 0    50   ~ 0
 EMMC_RST
 Wire Wire Line
-	10500 3600 11250 3600
+	10500 2650 11350 2650
 Wire Wire Line
-	10500 3700 11250 3700
-$Comp
-L require:OP P?
-U 1 1 5C8C0B68
-P 11450 3600
-AR Path="/5CDAE2B6/5C8C0B68" Ref="P?"  Part="1" 
-AR Path="/5C87E279/5C8C0B68" Ref="DIO1"  Part="1" 
-F 0 "DIO1" H 11700 3600 50  0000 C CNN
-F 1 "1" H 11450 3600 50  0000 C CNN
-F 2 "require:OVAL_PIN" H 11450 3550 50  0001 C CNN
-F 3 "" H 11450 3550 50  0001 C CNN
-	1    11450 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L require:OP P?
-U 1 1 5C8C0B6F
-P 11450 3700
-AR Path="/5CDAE2B6/5C8C0B6F" Ref="P?"  Part="1" 
-AR Path="/5C87E279/5C8C0B6F" Ref="DIO2"  Part="1" 
-F 0 "DIO2" H 11700 3700 50  0000 C CNN
-F 1 "2" H 11450 3700 50  0000 C CNN
-F 2 "require:OVAL_PIN" H 11450 3650 50  0001 C CNN
-F 3 "" H 11450 3650 50  0001 C CNN
-	1    11450 3700
-	1    0    0    -1  
-$EndComp
-NoConn ~ 10500 3400
+	10500 2750 11350 2750
+NoConn ~ 10500 2450
 $Comp
 L require:RK3308 U1000
 U 6 1 5C8D1F22
-P 8300 6300
-F 0 "U1000" H 9406 8587 60  0000 C CNN
-F 1 "RK3308" H 9406 8481 60  0000 C CNN
-F 2 "" H 8300 6300 60  0001 C CNN
-F 3 "" H 8300 6300 60  0001 C CNN
-	6    8300 6300
+P 8300 5350
+F 0 "U1000" H 8500 7500 60  0000 C CNN
+F 1 "RK3308" H 8500 7400 60  0000 C CNN
+F 2 "" H 8300 5350 60  0001 C CNN
+F 3 "" H 8300 5350 60  0001 C CNN
+	6    8300 5350
 	1    0    0    -1  
 $EndComp
-Text Label 10650 4400 0    50   ~ 0
+Text Label 10650 3450 0    50   ~ 0
 SDIO_D0
-Text Label 10650 4500 0    50   ~ 0
+Text Label 10650 3550 0    50   ~ 0
 SDIO_D1
-Text Label 10650 4600 0    50   ~ 0
+Text Label 10650 3650 0    50   ~ 0
 SDIO_D2
-Text Label 10650 4700 0    50   ~ 0
+Text Label 10650 3750 0    50   ~ 0
 SDIO_D3
-Text Label 10650 4800 0    50   ~ 0
+Text Label 10650 3850 0    50   ~ 0
 SDIO_CMD
-Text Label 10650 5100 0    50   ~ 0
+Text Label 10650 4150 0    50   ~ 0
 UART4_CTS
-Text Label 10650 5200 0    50   ~ 0
+Text Label 10650 4250 0    50   ~ 0
 UART4_RTS
-Text Label 10650 5300 0    50   ~ 0
+Text Label 10650 4350 0    50   ~ 0
 UART4_RXD
-Text Label 10650 5400 0    50   ~ 0
+Text Label 10650 4450 0    50   ~ 0
 UART4_TXD
-Text Label 10650 5500 0    50   ~ 0
+Text Label 10650 4550 0    50   ~ 0
 HOST_WAKE_BT
-Text Label 10650 5600 0    50   ~ 0
+Text Label 10650 4650 0    50   ~ 0
 BT_REG_ON
-Text Label 10650 5800 0    50   ~ 0
+Text Label 10650 4850 0    50   ~ 0
 BT_WAKE_HOST
-Text Label 10650 5900 0    50   ~ 0
+Text Label 10650 4950 0    50   ~ 0
 PCM_CLK
-Text Label 10650 6000 0    50   ~ 0
+Text Label 10650 5050 0    50   ~ 0
 PCM_SYNC
-Text Label 10650 6100 0    50   ~ 0
+Text Label 10650 5150 0    50   ~ 0
 PCM_OUT
-Text Label 10650 6200 0    50   ~ 0
+Text Label 10650 5250 0    50   ~ 0
 PCM_IN
-Text Label 10650 4900 0    50   ~ 0
+Text Label 10650 3950 0    50   ~ 0
 SDIO_CLK
-$Comp
-L require:OP LP?
-U 1 1 5C8F120C
-P 10900 7250
-AR Path="/5C2D00B3/5C8F120C" Ref="LP?"  Part="1" 
-AR Path="/5C87E279/5C8F120C" Ref="DIO19"  Part="1" 
-F 0 "DIO19" H 11150 7250 50  0000 C CNN
-F 1 "RX2" H 10900 7250 50  0000 C CNN
-F 2 "require:OVAL_PIN" H 10900 7200 50  0001 C CNN
-F 3 "" H 10900 7200 50  0001 C CNN
-	1    10900 7250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	10700 7250 10500 7250
-Wire Wire Line
-	10500 7350 10700 7350
-$Comp
-L require:OP LP?
-U 1 1 5C8F1215
-P 10900 7350
-AR Path="/5C2D00B3/5C8F1215" Ref="LP?"  Part="1" 
-AR Path="/5C87E279/5C8F1215" Ref="DIO20"  Part="1" 
-F 0 "DIO20" H 11150 7350 50  0000 C CNN
-F 1 "TX2" H 10900 7350 50  0000 C CNN
-F 2 "require:OVAL_PIN" H 10900 7300 50  0001 C CNN
-F 3 "" H 10900 7300 50  0001 C CNN
-	1    10900 7350
-	1    0    0    -1  
-$EndComp
+	10500 6250 11350 6250
 $Comp
 L require:RK3308 U1000
 U 7 1 5C8F2A67
-P 8300 7750
-F 0 "U1000" H 9406 8997 60  0000 C CNN
-F 1 "RK3308" H 9406 8891 60  0000 C CNN
-F 2 "" H 8300 7750 60  0001 C CNN
-F 3 "" H 8300 7750 60  0001 C CNN
-	7    8300 7750
+P 8300 6650
+F 0 "U1000" H 8500 7600 60  0000 C CNN
+F 1 "RK3308" H 8500 7500 60  0000 C CNN
+F 2 "" H 8300 6650 60  0001 C CNN
+F 3 "" H 8300 6650 60  0001 C CNN
+	7    8300 6650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -517,86 +255,8 @@ Text Label 9150 9000 0    50   ~ 0
 A4
 Text Label 9150 9100 0    50   ~ 0
 A5
-$Comp
-L require:OP LP?
-U 1 1 5D820ADB
-P 9750 8600
-AR Path="/5C325762/5D820ADB" Ref="LP?"  Part="1" 
-AR Path="/5C87E279/5D820ADB" Ref="LP2"  Part="1" 
-F 0 "LP2" H 9950 8600 50  0000 C CNN
-F 1 "A0" H 9750 8600 50  0000 C CNN
-F 2 "require:OVAL_PIN" H 9750 8600 50  0001 C CNN
-F 3 "" H 9750 8600 50  0001 C CNN
-	1    9750 8600
-	1    0    0    -1  
-$EndComp
-$Comp
-L require:OP LP?
-U 1 1 5D820AE2
-P 9750 8700
-AR Path="/5C325762/5D820AE2" Ref="LP?"  Part="1" 
-AR Path="/5C87E279/5D820AE2" Ref="LP3"  Part="1" 
-F 0 "LP3" H 9950 8700 50  0000 C CNN
-F 1 "A1" H 9750 8700 50  0000 C CNN
-F 2 "require:OVAL_PIN" H 9750 8700 50  0001 C CNN
-F 3 "" H 9750 8700 50  0001 C CNN
-	1    9750 8700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9100 8800 9550 8800
-$Comp
-L require:OP LP?
-U 1 1 5D820AEA
-P 9750 8800
-AR Path="/5C325762/5D820AEA" Ref="LP?"  Part="1" 
-AR Path="/5C87E279/5D820AEA" Ref="LP4"  Part="1" 
-F 0 "LP4" H 9950 8800 50  0000 C CNN
-F 1 "A2" H 9750 8800 50  0000 C CNN
-F 2 "require:OVAL_PIN" H 9750 8800 50  0001 C CNN
-F 3 "" H 9750 8800 50  0001 C CNN
-	1    9750 8800
-	1    0    0    -1  
-$EndComp
-$Comp
-L require:OP LP?
-U 1 1 5D820AF1
-P 9750 8900
-AR Path="/5C325762/5D820AF1" Ref="LP?"  Part="1" 
-AR Path="/5C87E279/5D820AF1" Ref="LP5"  Part="1" 
-F 0 "LP5" H 9950 8900 50  0000 C CNN
-F 1 "A3" H 9750 8900 50  0000 C CNN
-F 2 "require:OVAL_PIN" H 9750 8900 50  0001 C CNN
-F 3 "" H 9750 8900 50  0001 C CNN
-	1    9750 8900
-	1    0    0    -1  
-$EndComp
-$Comp
-L require:OP LP?
-U 1 1 5D820AF8
-P 9750 9000
-AR Path="/5C325762/5D820AF8" Ref="LP?"  Part="1" 
-AR Path="/5C87E279/5D820AF8" Ref="LP6"  Part="1" 
-F 0 "LP6" H 9950 9000 50  0000 C CNN
-F 1 "A4" H 9750 9000 50  0000 C CNN
-F 2 "require:OVAL_PIN" H 9750 9000 50  0001 C CNN
-F 3 "" H 9750 9000 50  0001 C CNN
-	1    9750 9000
-	1    0    0    -1  
-$EndComp
-$Comp
-L require:OP LP?
-U 1 1 5D820AFF
-P 9750 9100
-AR Path="/5C325762/5D820AFF" Ref="LP?"  Part="1" 
-AR Path="/5C87E279/5D820AFF" Ref="LP7"  Part="1" 
-F 0 "LP7" H 9950 9100 50  0000 C CNN
-F 1 "A5" H 9750 9100 50  0000 C CNN
-F 2 "require:OVAL_PIN" H 9750 9100 50  0001 C CNN
-F 3 "" H 9750 9100 50  0001 C CNN
-	1    9750 9100
-	1    0    0    -1  
-$EndComp
 NoConn ~ 15350 1600
 NoConn ~ 15350 1700
 NoConn ~ 15350 1800
@@ -622,48 +282,48 @@ NoConn ~ 15350 3700
 NoConn ~ 15350 3800
 NoConn ~ 15350 3900
 NoConn ~ 15350 4000
-Text HLabel 11350 3500 2    50   Input ~ 0
+Text HLabel 11350 2550 2    50   Input ~ 0
 EMMC_RST
-Text HLabel 11350 3300 2    50   Input ~ 0
+Text HLabel 11350 2350 2    50   Input ~ 0
 EMMC_CLK
-Text HLabel 11350 3200 2    50   Input ~ 0
+Text HLabel 11350 2250 2    50   Input ~ 0
 EMMC_CMD
-Text HLabel 11350 3100 2    50   Input ~ 0
+Text HLabel 11350 2150 2    50   Input ~ 0
 EMMC_D7
-Text HLabel 11350 3000 2    50   Input ~ 0
+Text HLabel 11350 2050 2    50   Input ~ 0
 EMMC_D6
-Text HLabel 11350 2900 2    50   Input ~ 0
+Text HLabel 11350 1950 2    50   Input ~ 0
 EMMC_D5
-Text HLabel 11350 2800 2    50   Input ~ 0
+Text HLabel 11350 1850 2    50   Input ~ 0
 EMMC_D4
-Text HLabel 11350 2700 2    50   Input ~ 0
+Text HLabel 11350 1750 2    50   Input ~ 0
 EMMC_D3
-Text HLabel 11350 2600 2    50   Input ~ 0
+Text HLabel 11350 1650 2    50   Input ~ 0
 EMMC_D2
-Text HLabel 11350 2500 2    50   Input ~ 0
+Text HLabel 11350 1550 2    50   Input ~ 0
 EMMC_D1
-Text HLabel 11350 2400 2    50   Input ~ 0
+Text HLabel 11350 1450 2    50   Input ~ 0
 EMMC_D0
 Wire Wire Line
-	10500 2400 11350 2400
+	10500 1450 11350 1450
 Wire Wire Line
-	10500 2500 11350 2500
+	10500 1550 11350 1550
 Wire Wire Line
-	10500 2600 11350 2600
+	10500 1650 11350 1650
 Wire Wire Line
-	10500 2700 11350 2700
+	10500 1750 11350 1750
 Wire Wire Line
-	10500 2800 11350 2800
+	10500 1850 11350 1850
 Wire Wire Line
-	10500 2900 11350 2900
+	10500 1950 11350 1950
 Wire Wire Line
-	10500 3000 11350 3000
+	10500 2050 11350 2050
 Wire Wire Line
-	10500 3100 11350 3100
+	10500 2150 11350 2150
 Wire Wire Line
-	10500 3200 11350 3200
+	10500 2250 11350 2250
 Wire Wire Line
-	10500 3300 11350 3300
+	10500 2350 11350 2350
 NoConn ~ 4100 8100
 NoConn ~ 4100 8200
 NoConn ~ 4100 8300
@@ -699,87 +359,87 @@ NoConn ~ 4100 6100
 NoConn ~ 4100 6200
 NoConn ~ 4100 6300
 NoConn ~ 4100 6400
-Text HLabel 11350 4400 2    50   Input ~ 0
+Text HLabel 11350 3450 2    50   Input ~ 0
 SDIO_D0
-Text HLabel 11350 4500 2    50   Input ~ 0
+Text HLabel 11350 3550 2    50   Input ~ 0
 SDIO_D1
-Text HLabel 11350 4600 2    50   Input ~ 0
+Text HLabel 11350 3650 2    50   Input ~ 0
 SDIO_D2
-Text HLabel 11350 4700 2    50   Input ~ 0
+Text HLabel 11350 3750 2    50   Input ~ 0
 SDIO_D3
-Text HLabel 11350 4800 2    50   Input ~ 0
+Text HLabel 11350 3850 2    50   Input ~ 0
 SDIO_CMD
-Text HLabel 11350 4900 2    50   Input ~ 0
+Text HLabel 11350 3950 2    50   Input ~ 0
 SDIO_CLK
 Wire Wire Line
-	10500 4400 11350 4400
+	10500 3450 11350 3450
 Wire Wire Line
-	10500 4500 11350 4500
+	10500 3550 11350 3550
 Wire Wire Line
-	10500 4600 11350 4600
+	10500 3650 11350 3650
 Wire Wire Line
-	10500 4700 11350 4700
+	10500 3750 11350 3750
 Wire Wire Line
-	10500 4800 11350 4800
+	10500 3850 11350 3850
 Wire Wire Line
-	10500 4900 11350 4900
-Text HLabel 11350 5100 2    50   Input ~ 0
+	10500 3950 11350 3950
+Text HLabel 11350 4150 2    50   Input ~ 0
 UART4_CTS
-Text HLabel 11350 5200 2    50   Input ~ 0
+Text HLabel 11350 4250 2    50   Input ~ 0
 UART4_RTS
-Text HLabel 11350 5300 2    50   Input ~ 0
+Text HLabel 11350 4350 2    50   Input ~ 0
 UART4_RXD
-Text HLabel 11350 5400 2    50   Input ~ 0
+Text HLabel 11350 4450 2    50   Input ~ 0
 UART4_TXD
-Text HLabel 11350 5500 2    50   Input ~ 0
+Text HLabel 11350 4550 2    50   Input ~ 0
 HOST_WAKE_BT
-Text HLabel 11350 5600 2    50   Input ~ 0
+Text HLabel 11350 4650 2    50   Input ~ 0
 BT_REG_ON
 Wire Wire Line
-	10500 5100 11350 5100
+	10500 4150 11350 4150
 Wire Wire Line
-	10500 5200 11350 5200
+	10500 4250 11350 4250
 Wire Wire Line
-	10500 5300 11350 5300
+	10500 4350 11350 4350
 Wire Wire Line
-	10500 5400 11350 5400
+	10500 4450 11350 4450
 Wire Wire Line
-	10500 5500 11350 5500
+	10500 4550 11350 4550
 Wire Wire Line
-	10500 5600 11350 5600
-Text HLabel 11350 5800 2    50   Input ~ 0
+	10500 4650 11350 4650
+Text HLabel 11350 4850 2    50   Input ~ 0
 BT_WAKE_HOST
-Text HLabel 11350 5900 2    50   Input ~ 0
+Text HLabel 11350 4950 2    50   Input ~ 0
 PCM_CLK
-Text HLabel 11350 6000 2    50   Input ~ 0
+Text HLabel 11350 5050 2    50   Input ~ 0
 PCM_SYNC
-Text HLabel 11350 6100 2    50   Input ~ 0
+Text HLabel 11350 5150 2    50   Input ~ 0
 PCM_OUT
-Text HLabel 11350 6200 2    50   Input ~ 0
+Text HLabel 11350 5250 2    50   Input ~ 0
 PCM_IN
 Wire Wire Line
-	10500 5800 11350 5800
+	10500 4850 11350 4850
 Wire Wire Line
-	10500 5900 11350 5900
+	10500 4950 11350 4950
 Wire Wire Line
-	10500 6000 11350 6000
+	10500 5050 11350 5050
 Wire Wire Line
-	10500 6100 11350 6100
+	10500 5150 11350 5150
 Wire Wire Line
-	10500 6200 11350 6200
-NoConn ~ 10500 7050
-NoConn ~ 10500 7150
-NoConn ~ 10500 7450
-NoConn ~ 10500 7550
-NoConn ~ 10500 7650
-Text HLabel 5050 1400 2    50   Input ~ 0
+	10500 5250 11350 5250
+NoConn ~ 10500 5950
+NoConn ~ 10500 6050
+NoConn ~ 10500 6350
+NoConn ~ 10500 6450
+NoConn ~ 10500 6550
+Text HLabel 4950 1400 2    50   Input ~ 0
 WIFI_WAKE_HOST
-Text HLabel 5050 1600 2    50   Input ~ 0
+Text HLabel 4950 1600 2    50   Input ~ 0
 WIFI_REG_ON
 Wire Wire Line
-	4100 1400 5050 1400
+	4100 1400 4950 1400
 Wire Wire Line
-	4100 1600 5050 1600
+	4100 1600 4950 1600
 NoConn ~ 4100 1500
 NoConn ~ 4100 1700
 NoConn ~ 4100 1800
@@ -787,16 +447,193 @@ NoConn ~ 4100 3100
 NoConn ~ 4100 3300
 NoConn ~ 4100 3500
 NoConn ~ 4100 3600
-Text HLabel 5050 2700 2    50   Input ~ 0
+Text HLabel 4950 2700 2    50   Input ~ 0
 CORE_DVS
 Wire Wire Line
-	4100 2700 5050 2700
-Text HLabel 5050 2500 2    50   Input ~ 0
+	4100 2700 4950 2700
+Text HLabel 6600 2500 2    50   Input ~ 0
 I2C1_SDA
-Text HLabel 5050 2600 2    50   Input ~ 0
+Text HLabel 6600 2600 2    50   Input ~ 0
 I2C1_SCL
 Wire Wire Line
-	4100 2500 5050 2500
+	4100 2500 6000 2500
 Wire Wire Line
-	4100 2600 5050 2600
+	4100 2600 5600 2600
+$Comp
+L require:RK3308 U1000
+U 9 1 5C4EF247
+P 12300 8300
+F 0 "U1000" H 12906 9287 60  0000 C CNN
+F 1 "RK3308" H 12906 9181 60  0000 C CNN
+F 2 "" H 12300 12550 60  0001 C CNN
+F 3 "" H 12300 12550 60  0001 C CNN
+	9    12300 8300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13500 7600 14400 7600
+Text HLabel 14400 7600 2    50   Input ~ 0
+USB_OTG_DM
+Text HLabel 14400 7700 2    50   Input ~ 0
+USB_OTG_DP
+Text HLabel 14400 7800 2    50   Input ~ 0
+USB_OTG_VBUS
+Text HLabel 14400 7900 2    50   Input ~ 0
+USB_OTG_ID
+Text HLabel 14400 8000 2    50   Input ~ 0
+USB_HOST_DM
+Text HLabel 14400 8100 2    50   Input ~ 0
+USB_HOST_DP
+Wire Wire Line
+	13500 7700 14400 7700
+Wire Wire Line
+	13500 7800 14400 7800
+Wire Wire Line
+	13500 7900 14400 7900
+Wire Wire Line
+	13500 8000 14400 8000
+Wire Wire Line
+	13500 8100 14400 8100
+$Comp
+L Device:R R?
+U 1 1 5C4FA3AC
+P 13600 8550
+AR Path="/5CED3BD3/5C4FA3AC" Ref="R?"  Part="1" 
+AR Path="/5C87E279/5C4FA3AC" Ref="R93"  Part="1" 
+F 0 "R93" V 13500 8550 50  0000 C CNN
+F 1 "133R,1%" V 13700 8550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 13530 8550 50  0001 C CNN
+F 3 "~" H 13600 8550 50  0001 C CNN
+	1    13600 8550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	13500 8200 13600 8200
+Wire Wire Line
+	13600 8200 13600 8400
+Wire Wire Line
+	13600 8700 13600 8900
+$Comp
+L power:GND #PWR0154
+U 1 1 5C61BAAB
+P 13600 8900
+F 0 "#PWR0154" H 13600 8650 50  0001 C CNN
+F 1 "GND" H 13605 8727 50  0000 C CNN
+F 2 "" H 13600 8900 50  0001 C CNN
+F 3 "" H 13600 8900 50  0001 C CNN
+	1    13600 8900
+	1    0    0    -1  
+$EndComp
+Text HLabel 9550 8600 2    50   Input ~ 0
+A0
+Text HLabel 9550 8700 2    50   Input ~ 0
+A1
+Text HLabel 9550 8800 2    50   Input ~ 0
+A2
+Text HLabel 9550 8900 2    50   Input ~ 0
+A3
+Text HLabel 9550 9000 2    50   Input ~ 0
+A4
+Text HLabel 9550 9100 2    50   Input ~ 0
+A5
+Text HLabel 11350 6150 2    50   Input ~ 0
+D19
+Wire Wire Line
+	11350 6150 10500 6150
+Text HLabel 11350 6250 2    50   Input ~ 0
+D20
+Text HLabel 4950 3200 2    50   Input ~ 0
+D18
+Text HLabel 4950 2200 2    50   Input ~ 0
+D17
+Text HLabel 4950 2100 2    50   Input ~ 0
+D16
+Text HLabel 4950 2000 2    50   Input ~ 0
+D15
+Text HLabel 4950 1900 2    50   Input ~ 0
+D14
+Text HLabel 4950 3000 2    50   Input ~ 0
+D13
+Text HLabel 4950 2900 2    50   Input ~ 0
+D12
+Text HLabel 4950 2800 2    50   Input ~ 0
+D11
+Text HLabel 5100 6900 2    50   Input ~ 0
+D10
+Text HLabel 5100 6800 2    50   Input ~ 0
+D9
+Text HLabel 5100 6700 2    50   Input ~ 0
+D8
+Text HLabel 5100 6600 2    50   Input ~ 0
+D7
+Text HLabel 4750 7900 2    50   Input ~ 0
+D6
+Text HLabel 4750 7800 2    50   Input ~ 0
+D5
+Text HLabel 4750 7700 2    50   Input ~ 0
+D4
+Text HLabel 4750 7600 2    50   Input ~ 0
+D3
+Text HLabel 11350 2650 2    50   Input ~ 0
+D1
+Text HLabel 11350 2750 2    50   Input ~ 0
+D2
+$Comp
+L Device:R R?
+U 1 1 5C80A816
+P 6000 2250
+AR Path="/5C2D00B3/5C80A816" Ref="R?"  Part="1" 
+AR Path="/5C80A816" Ref="R?"  Part="1" 
+AR Path="/5C87E279/5C80A816" Ref="R5"  Part="1" 
+F 0 "R5" H 5850 2200 50  0000 C CNN
+F 1 "22R" H 5850 2300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 5930 2250 50  0001 C CNN
+F 3 "~" H 6000 2250 50  0001 C CNN
+	1    6000 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C80A81D
+P 5600 2250
+AR Path="/5C2D00B3/5C80A81D" Ref="R?"  Part="1" 
+AR Path="/5C80A81D" Ref="R?"  Part="1" 
+AR Path="/5C87E279/5C80A81D" Ref="R4"  Part="1" 
+F 0 "R4" H 5450 2200 50  0000 C CNN
+F 1 "22R" H 5450 2300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 5530 2250 50  0001 C CNN
+F 3 "~" H 5600 2250 50  0001 C CNN
+	1    5600 2250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5600 2100 5600 2000
+Wire Wire Line
+	5600 2000 6000 2000
+Wire Wire Line
+	6000 2000 6000 2100
+Wire Wire Line
+	6000 2000 6000 1900
+Connection ~ 6000 2000
+$Comp
+L require:VCC_IO #PWR0227
+U 1 1 5C812416
+P 6000 1900
+F 0 "#PWR0227" H 6000 1750 50  0001 C CNN
+F 1 "VCC_IO" H 6017 2073 50  0000 C CNN
+F 2 "" H 6000 1900 50  0001 C CNN
+F 3 "" H 6000 1900 50  0001 C CNN
+	1    6000 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 2400 5600 2600
+Connection ~ 5600 2600
+Wire Wire Line
+	5600 2600 6600 2600
+Wire Wire Line
+	6000 2400 6000 2500
+Connection ~ 6000 2500
+Wire Wire Line
+	6000 2500 6600 2500
 $EndSCHEMATC

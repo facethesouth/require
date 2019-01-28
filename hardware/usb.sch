@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 9
+Sheet 7 8
 Title ""
 Date ""
 Rev ""
@@ -14,49 +14,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L require:RK3308 U1000
-U 9 1 5CED3BF3
-P 1000 3400
-F 0 "U1000" H 1606 6187 60  0000 C CNN
-F 1 "RK3308" H 1606 6081 60  0000 C CNN
-F 2 "" H 1000 3400 60  0001 C CNN
-F 3 "" H 1000 3400 60  0001 C CNN
-	9    1000 3400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2200 1000 3050 1000
-Wire Wire Line
-	2200 1100 3050 1100
 Wire Wire Line
 	2200 1800 3050 1800
-$Comp
-L Device:R R93
-U 1 1 5CED3D45
-P 2550 2100
-F 0 "R93" V 2450 2100 50  0000 C CNN
-F 1 "133R,1%" V 2650 2100 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 2480 2100 50  0001 C CNN
-F 3 "~" H 2550 2100 50  0001 C CNN
-	1    2550 2100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2200 2100 2400 2100
-Wire Wire Line
-	2700 2100 3050 2100
-$Comp
-L power:GND #PWR0191
-U 1 1 5CED3E64
-P 3050 2100
-F 0 "#PWR0191" H 3050 1850 50  0001 C CNN
-F 1 "GND" V 3055 1972 50  0000 R CNN
-F 2 "" H 3050 2100 50  0001 C CNN
-F 3 "" H 3050 2100 50  0001 C CNN
-	1    3050 2100
-	0    -1   -1   0   
-$EndComp
 $Comp
 L require:VCC_IO #PWR0195
 U 1 1 5CED42C8
@@ -68,207 +27,11 @@ F 3 "" H 4050 1100 50  0001 C CNN
 	1    4050 1100
 	1    0    0    -1  
 $EndComp
-Text Label 2350 1000 0    50   ~ 0
-USB_OTG_DM
-Text Label 2350 1100 0    50   ~ 0
-USB_OTG_DP
 Text Label 2350 1800 0    50   ~ 0
 USB_HOST_DM
 Text Label 2350 1900 0    50   ~ 0
 USB_HOST_DP
-$Comp
-L Connector:USB_B_Micro J10
-U 1 1 5CED7FA5
-P 1800 4950
-F 0 "J10" H 1855 5417 50  0000 C CNN
-F 1 "USB_B_Micro" H 1855 5326 50  0000 C CNN
-F 2 "Connectors_USB:USB_Micro-B_Molex_47346-0001" H 1950 4900 50  0001 C CNN
-F 3 "~" H 1950 4900 50  0001 C CNN
-	1    1800 4950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2100 4750 5500 4750
-$Comp
-L require:VCC5V0_SYS #PWR0218
-U 1 1 5CED863A
-P 5500 4650
-F 0 "#PWR0218" H 5500 4500 50  0001 C CNN
-F 1 "VCC5V0_SYS" H 5517 4823 50  0000 C CNN
-F 2 "" H 5500 4650 50  0001 C CNN
-F 3 "" H 5500 4650 50  0001 C CNN
-	1    5500 4650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_TVS D2
-U 1 1 5CEDAEDE
-P 5500 5100
-F 0 "D2" V 5454 5179 50  0000 L CNN
-F 1 "D_TVS" V 5545 5179 50  0000 L CNN
-F 2 "" H 5500 5100 50  0001 C CNN
-F 3 "~" H 5500 5100 50  0001 C CNN
-	1    5500 5100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5500 4950 5500 4750
-Connection ~ 5500 4750
-Wire Wire Line
-	5500 5250 5500 5450
-$Comp
-L power:GND #PWR0222
-U 1 1 5CEDB8B6
-P 5500 5450
-F 0 "#PWR0222" H 5500 5200 50  0001 C CNN
-F 1 "GND" H 5505 5277 50  0000 C CNN
-F 2 "" H 5500 5450 50  0001 C CNN
-F 3 "" H 5500 5450 50  0001 C CNN
-	1    5500 5450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R1
-U 1 1 5CEDEDE4
-P 3300 4950
-F 0 "R1" V 3400 5000 50  0000 C CNN
-F 1 "2.2R" V 3400 4850 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 3230 4950 50  0001 C CNN
-F 3 "~" H 3300 4950 50  0001 C CNN
-	1    3300 4950
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 5CEDEE6B
-P 3300 5050
-F 0 "R2" V 3200 5100 50  0000 C CNN
-F 1 "2.2R" V 3200 4950 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 3230 5050 50  0001 C CNN
-F 3 "~" H 3300 5050 50  0001 C CNN
-	1    3300 5050
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2100 4950 3150 4950
-Wire Wire Line
-	2100 5050 3150 5050
-Wire Wire Line
-	3450 4950 4200 4950
-Wire Wire Line
-	3450 5050 4200 5050
-Text Label 3600 4950 0    50   ~ 0
-USB_OTG_DP
-Text Label 3600 5050 0    50   ~ 0
-USB_OTG_DM
-NoConn ~ 2100 5150
 NoConn ~ 2200 1400
-Text Notes 5100 800  0    100  ~ 20
-USB_OTG_ID floating, dedicated device/peripheral mode. no OTG.
-Wire Wire Line
-	5500 4750 5500 4650
-Wire Wire Line
-	1800 5350 1800 5450
-$Comp
-L power:GND #PWR0215
-U 1 1 5CF5439A
-P 1800 5550
-F 0 "#PWR0215" H 1800 5300 50  0001 C CNN
-F 1 "GND" H 1805 5377 50  0000 C CNN
-F 2 "" H 1800 5550 50  0001 C CNN
-F 3 "" H 1800 5550 50  0001 C CNN
-	1    1800 5550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1700 5350 1700 5450
-Wire Wire Line
-	1700 5450 1800 5450
-Connection ~ 1800 5450
-Wire Wire Line
-	1800 5450 1800 5550
-$Comp
-L Mechanical:MountingHole_Pad H1
-U 1 1 5CF638CE
-P 7200 1550
-F 0 "H1" H 7300 1601 50  0000 L CNN
-F 1 "MountingHole_Pad" H 7300 1510 50  0000 L CNN
-F 2 "require:PTH_MTG320_380" H 7200 1550 50  0001 C CNN
-F 3 "~" H 7200 1550 50  0001 C CNN
-	1    7200 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0216
-U 1 1 5CF6394E
-P 7200 1850
-F 0 "#PWR0216" H 7200 1600 50  0001 C CNN
-F 1 "GND" H 7205 1677 50  0000 C CNN
-F 2 "" H 7200 1850 50  0001 C CNN
-F 3 "" H 7200 1850 50  0001 C CNN
-	1    7200 1850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7200 1650 7200 1750
-$Comp
-L Mechanical:MountingHole_Pad H2
-U 1 1 5CF63EC1
-P 7200 2300
-F 0 "H2" H 7300 2351 50  0000 L CNN
-F 1 "MountingHole_Pad" H 7300 2260 50  0000 L CNN
-F 2 "require:PTH_MTG320_380" H 7200 2300 50  0001 C CNN
-F 3 "~" H 7200 2300 50  0001 C CNN
-	1    7200 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H3
-U 1 1 5CF63FAF
-P 7200 2850
-F 0 "H3" H 7300 2901 50  0000 L CNN
-F 1 "MountingHole_Pad" H 7300 2810 50  0000 L CNN
-F 2 "require:PTH_MTG320_380" H 7200 2850 50  0001 C CNN
-F 3 "~" H 7200 2850 50  0001 C CNN
-	1    7200 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H4
-U 1 1 5CF63FE5
-P 7200 3250
-F 0 "H4" H 7300 3301 50  0000 L CNN
-F 1 "MountingHole_Pad" H 7300 3210 50  0000 L CNN
-F 2 "require:PTH_MTG320_380" H 7200 3250 50  0001 C CNN
-F 3 "~" H 7200 3250 50  0001 C CNN
-	1    7200 3250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7200 2400 7200 2500
-Wire Wire Line
-	7200 2500 6900 2500
-Wire Wire Line
-	7200 1750 6900 1750
-Wire Wire Line
-	6900 1750 6900 2500
-Connection ~ 7200 1750
-Wire Wire Line
-	7200 1750 7200 1850
-Wire Wire Line
-	7200 2950 7200 3050
-Wire Wire Line
-	7200 3050 6900 3050
-Wire Wire Line
-	6900 3050 6900 2500
-Connection ~ 6900 2500
-Wire Wire Line
-	7200 3350 7200 3450
-Wire Wire Line
-	7200 3450 6900 3450
-Wire Wire Line
-	6900 3450 6900 3050
-Connection ~ 6900 3050
 $Comp
 L require:OP LP11
 U 1 1 5C4F0BF5

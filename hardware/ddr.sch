@@ -340,7 +340,7 @@ DDR_D7
 Text Label 3500 3300 0    60   ~ 0
 DDR_D8
 Text Label 3500 3400 0    60   ~ 0
-DDR_D9
+DDR_D13
 Text Label 3500 3500 0    60   ~ 0
 DDR_D10
 Text Label 3500 3600 0    60   ~ 0
@@ -348,7 +348,7 @@ DDR_D11
 Text Label 3500 3700 0    60   ~ 0
 DDR_D12
 Text Label 3500 3800 0    60   ~ 0
-DDR_D13
+DDR_D9
 Text Label 3500 3900 0    60   ~ 0
 DDR_D14
 Text Label 3500 4000 0    60   ~ 0
@@ -490,11 +490,11 @@ DDR_D8
 Text Label 10600 2450 0    60   ~ 0
 DDR_D2
 Text Label 10600 2550 0    60   ~ 0
-DDR_D5
+DDR_D1
 Text Label 10600 2650 0    60   ~ 0
 DDR_D0
 Text Label 10600 2750 0    60   ~ 0
-DDR_D1
+DDR_D5
 Text Label 10600 2850 0    60   ~ 0
 DDR_D3
 Text Label 10600 2950 0    60   ~ 0

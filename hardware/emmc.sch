@@ -14,26 +14,14 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 1900 1800 0    50   ~ 0
-FLASH_D3
-Text Label 2200 3000 0    50   ~ 0
-FLASH_D5
 Wire Wire Line
 	3450 2400 3250 2200
-Text Label 1900 1700 0    50   ~ 0
-FLASH_D4
 Wire Wire Line
 	3450 2200 3450 1600
-Text Label 1900 1600 0    50   ~ 0
-FLASH_D0
 Wire Wire Line
 	3650 2200 3650 1500
-Text Label 1900 1500 0    50   ~ 0
-FLASH_D1
 Wire Wire Line
 	3850 2200 3850 1400
-Text Label 1900 1400 0    50   ~ 0
-FLASH_D2
 Wire Wire Line
 	4050 2200 4050 1800
 $Comp
@@ -101,10 +89,6 @@ Wire Wire Line
 Connection ~ 4450 3600
 Wire Wire Line
 	4250 3400 4450 3400
-Text Label 1900 1300 0    50   ~ 0
-FLASH_D7
-Text Label 2200 3400 0    50   ~ 0
-FLASH_D6
 $Comp
 L require:VCC_IO #PWR0133
 U 1 1 5D136F94
@@ -298,8 +282,6 @@ Wire Wire Line
 Connection ~ 3450 3800
 Wire Wire Line
 	3450 3800 3250 3800
-Text Label 2200 3800 0    50   ~ 0
-EMMC_RST
 Wire Wire Line
 	4050 4400 3650 4000
 Wire Wire Line
@@ -322,10 +304,6 @@ Wire Wire Line
 Connection ~ 3450 4200
 Wire Wire Line
 	3450 4200 3250 4200
-Text Label 2200 4000 0    50   ~ 0
-FLASH_CLK
-Text Label 2200 4200 0    50   ~ 0
-FLASH_CMD
 Wire Wire Line
 	3250 1700 3250 2200
 Wire Wire Line

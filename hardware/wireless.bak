@@ -25,32 +25,10 @@ F 3 "" H 12550 4450 60  0001 C CNN
 	1    12550 4450
 	1    0    0    -1  
 $EndComp
-Text Label 13950 3950 0    50   ~ 0
-UART4_RTS
-Text Label 13950 4050 0    50   ~ 0
-UART4_TXD
-Text Label 13950 4150 0    50   ~ 0
-UART4_RXD
-Text Label 13950 4250 0    50   ~ 0
-UART4_CTS
-Text Label 13950 4950 0    50   ~ 0
-BT_REG_ON
 NoConn ~ 13750 4350
 NoConn ~ 13750 4450
 NoConn ~ 13750 4550
 NoConn ~ 13750 4650
-Text Label 9800 4450 0    50   ~ 0
-SDIO_CLK
-Text Label 9800 4150 0    50   ~ 0
-SDIO_D2
-Text Label 9800 4250 0    50   ~ 0
-SDIO_D3
-Text Label 9800 4350 0    50   ~ 0
-SDIO_CMD
-Text Label 9800 4550 0    50   ~ 0
-SDIO_D0
-Text Label 9800 4650 0    50   ~ 0
-SDIO_D1
 $Comp
 L power:GND #PWR0138
 U 1 1 5D27C850
@@ -267,10 +245,6 @@ Wire Wire Line
 	12550 3250 12550 1450
 Wire Wire Line
 	12550 1450 10300 1450
-Text Label 10400 1450 0    50   ~ 0
-HOST_WAKE_BT
-Text Label 10400 1550 0    50   ~ 0
-BT_WAKE_HOST
 Text HLabel 10300 1550 0    50   Input ~ 0
 BT_WAKE_HOST
 Text HLabel 10300 1450 0    50   Input ~ 0
@@ -436,10 +410,6 @@ F 3 "" H 10100 3600 50  0001 C CNN
 	1    10100 3600
 	1    0    0    -1  
 $EndComp
-Text Label 9800 3950 0    50   ~ 0
-WIFI_REG_ON
-Text Label 9800 4050 0    50   ~ 0
-WIFI_WAKE_HOST
 Wire Wire Line
 	10150 4950 10150 4850
 $Comp
@@ -627,14 +597,6 @@ Wire Wire Line
 	12250 5650 12250 6850
 Wire Wire Line
 	12250 6850 13200 6850
-Text Label 12650 6400 0    50   ~ 0
-PCM_SYNC
-Text Label 12650 6550 0    50   ~ 0
-PCM_IN
-Text Label 12650 6700 0    50   ~ 0
-PCM_CLK
-Text Label 12650 6850 0    50   ~ 0
-PCM_OUT
 Wire Wire Line
 	10100 2650 9400 2650
 Connection ~ 9400 2650

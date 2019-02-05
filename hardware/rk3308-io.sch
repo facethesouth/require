@@ -37,10 +37,6 @@ Wire Wire Line
 	4100 2000 4950 2000
 Wire Wire Line
 	4100 2100 4950 2100
-Wire Wire Line
-	4100 2200 4950 2200
-Wire Wire Line
-	4100 3200 4950 3200
 $Comp
 L require:RK3308 U1000
 U 3 1 5C8A3C28
@@ -413,7 +409,7 @@ AR Path="/5CED3BD3/5C4FA3AC" Ref="R?"  Part="1"
 AR Path="/5C87E279/5C4FA3AC" Ref="R72"  Part="1" 
 F 0 "R72" V 9500 9750 50  0000 C CNN
 F 1 "133R,1%" V 9700 9750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 9530 9750 50  0001 C CNN
+F 2 "require:R_0402" V 9530 9750 50  0001 C CNN
 F 3 "~" H 9600 9750 50  0001 C CNN
 	1    9600 9750
 	-1   0    0    1   
@@ -453,10 +449,6 @@ Wire Wire Line
 	11350 6150 10500 6150
 Text HLabel 11350 6250 2    50   Input ~ 0
 D20
-Text HLabel 4950 3200 2    50   Input ~ 0
-D18
-Text HLabel 4950 2200 2    50   Input ~ 0
-D17
 Text HLabel 4950 2100 2    50   Input ~ 0
 D16
 Text HLabel 4950 2000 2    50   Input ~ 0
@@ -498,7 +490,7 @@ AR Path="/5C80A816" Ref="R?"  Part="1"
 AR Path="/5C87E279/5C80A816" Ref="R61"  Part="1" 
 F 0 "R61" H 5850 2200 50  0000 C CNN
 F 1 "22R" H 5850 2300 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 5930 2250 50  0001 C CNN
+F 2 "require:R_0402" V 5930 2250 50  0001 C CNN
 F 3 "~" H 6000 2250 50  0001 C CNN
 	1    6000 2250
 	-1   0    0    1   
@@ -512,7 +504,7 @@ AR Path="/5C80A81D" Ref="R?"  Part="1"
 AR Path="/5C87E279/5C80A81D" Ref="R60"  Part="1" 
 F 0 "R60" H 5450 2200 50  0000 C CNN
 F 1 "22R" H 5450 2300 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 5530 2250 50  0001 C CNN
+F 2 "require:R_0402" V 5530 2250 50  0001 C CNN
 F 3 "~" H 5600 2250 50  0001 C CNN
 	1    5600 2250
 	-1   0    0    1   
@@ -556,7 +548,7 @@ AR Path="/5C615982" Ref="R?"  Part="1"
 AR Path="/5C87E279/5C615982" Ref="R62"  Part="1" 
 F 0 "R62" V 4350 1700 50  0000 C CNN
 F 1 "2.2k" V 4350 1900 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 4380 1800 50  0001 C CNN
+F 2 "require:R_0402" V 4380 1800 50  0001 C CNN
 F 3 "~" H 4450 1800 50  0001 C CNN
 	1    4450 1800
 	0    1    1    0   

@@ -286,7 +286,6 @@ Wire Wire Line
 	4050 4400 3650 4000
 Wire Wire Line
 	3650 4000 3450 4000
-Connection ~ 3050 4000
 Connection ~ 3250 4000
 Wire Wire Line
 	3250 4000 3050 4000
@@ -406,8 +405,6 @@ Wire Wire Line
 	3650 4400 3650 4600
 Wire Wire Line
 	1800 5000 1800 5100
-Wire Wire Line
-	1800 4000 3050 4000
 Text HLabel 1800 4000 0    50   Input ~ 0
 EMMC_CLK
 Text HLabel 1800 4200 0    50   Input ~ 0
@@ -743,4 +740,60 @@ F 3 "~" H 8750 4850 50  0001 C CNN
 	1    8750 4850
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5C5BDCB5
+P 3450 900
+F 0 "TP1" H 3508 1020 50  0000 L CNN
+F 1 "TestPoint" H 3508 929 50  0000 L CNN
+F 2 "require:TPTH0603" H 3650 900 50  0001 C CNN
+F 3 "~" H 3650 900 50  0001 C CNN
+	1    3450 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 1600 3450 900 
+Connection ~ 3450 1600
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5C5C292E
+P 3950 900
+F 0 "TP2" H 4008 1020 50  0000 L CNN
+F 1 "TestPoint" H 4008 929 50  0000 L CNN
+F 2 "require:TPTH0603" H 4150 900 50  0001 C CNN
+F 3 "~" H 4150 900 50  0001 C CNN
+	1    3950 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0242
+U 1 1 5C5C29C3
+P 3950 1000
+F 0 "#PWR0242" H 3950 750 50  0001 C CNN
+F 1 "GND" H 3955 827 50  0000 C CNN
+F 2 "" H 3950 1000 50  0001 C CNN
+F 3 "" H 3950 1000 50  0001 C CNN
+	1    3950 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 1000 3950 900 
+$Comp
+L Device:R R9675
+U 1 1 5C5CEDA4
+P 2150 4000
+F 0 "R9675" V 2050 4000 50  0000 C CNN
+F 1 "22R" V 2250 4000 50  0000 C CNN
+F 2 "require:R_0402" V 2080 4000 50  0001 C CNN
+F 3 "~" H 2150 4000 50  0001 C CNN
+	1    2150 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1800 4000 2000 4000
+Wire Wire Line
+	2300 4000 3050 4000
+Connection ~ 3050 4000
+Text Label 2350 4000 0    50   ~ 0
+EMMC_CLK1
 $EndSCHEMATC

@@ -1,5 +1,20 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP +1V0C
+D Power flag, +1.0V
+K power-flag
+$ENDCMP
+#
+$CMP +1V0L
+D Power flag, +1.0V
+K power-flag
+$ENDCMP
+#
+$CMP +1V8A
+D Power flag, +1.8V
+K power-flag
+$ENDCMP
+#
 $CMP AVDD_1V0
 D power-flag symbol
 K Power Flag Symbol

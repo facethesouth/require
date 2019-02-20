@@ -558,44 +558,6 @@ F 3 "~" H 8750 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP1
-U 1 1 5C5BDCB5
-P 3450 900
-F 0 "TP1" H 3508 1020 50  0000 L CNN
-F 1 "TestPoint" H 3508 929 50  0000 L CNN
-F 2 "require:TPTH0503" H 3650 900 50  0001 C CNN
-F 3 "~" H 3650 900 50  0001 C CNN
-	1    3450 900 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3450 1600 3450 900 
-Connection ~ 3450 1600
-$Comp
-L Connector:TestPoint TP2
-U 1 1 5C5C292E
-P 3950 900
-F 0 "TP2" H 4008 1020 50  0000 L CNN
-F 1 "TestPoint" H 4008 929 50  0000 L CNN
-F 2 "require:TPTH0503" H 4150 900 50  0001 C CNN
-F 3 "~" H 4150 900 50  0001 C CNN
-	1    3950 900 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0242
-U 1 1 5C5C29C3
-P 3950 1000
-F 0 "#PWR0242" H 3950 750 50  0001 C CNN
-F 1 "GND" H 3955 827 50  0000 C CNN
-F 2 "" H 3950 1000 50  0001 C CNN
-F 3 "" H 3950 1000 50  0001 C CNN
-	1    3950 1000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3950 1000 3950 900 
-$Comp
 L Device:R R60
 U 1 1 5C5CEDA4
 P 2150 4000

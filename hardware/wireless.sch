@@ -336,11 +336,7 @@ $EndComp
 Wire Wire Line
 	10100 2800 10100 3100
 Wire Wire Line
-	10100 3100 10550 3100
-Wire Wire Line
 	10100 2800 12150 2800
-Wire Wire Line
-	10850 3100 11100 3100
 Text Notes 10900 2950 0    50   ~ 0
 epson fa-128
 $Comp
@@ -618,4 +614,10 @@ F 3 "" H 4950 7800 50  0001 C CNN
 	1    4950 7800
 	1    0    0    -1  
 $EndComp
+Text Notes 1850 6150 0    100  ~ 0
+From CYW43455 datasheet\nL: 0806 size, 2.2 µH, DCR=0.11Ω, ACR=1.18Ω @ 4 MHz\nCout:  Ceramic, X5R, 0402, ESR <30 mΩ at 4 MHz, 4.7 µF, ±20%, 6.3V\nCin: For SR_VDDBATP5V pin, ceramic, X5R, 0603, ESR < 30 mΩ at 4 MHz, ±4.7uF ±20%, 6.3V
+Wire Wire Line
+	10100 3100 10550 3100
+Wire Wire Line
+	10850 3100 11100 3100
 $EndSCHEMATC

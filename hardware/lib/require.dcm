@@ -15,6 +15,16 @@ D Power flag, +1.8V
 K power-flag
 $ENDCMP
 #
+$CMP +3.3V
+D Power flag, +3.3V
+K power-flag
+$ENDCMP
+#
+$CMP +3V3EMMC
+D Power flag, +3.3V
+K power-flag
+$ENDCMP
+#
 $CMP AVDD_1V0
 D power-flag symbol
 K Power Flag Symbol

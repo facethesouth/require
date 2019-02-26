@@ -352,26 +352,20 @@ NoConn ~ 4100 1500
 NoConn ~ 4100 1700
 NoConn ~ 4100 3100
 NoConn ~ 4100 3300
-NoConn ~ 4100 3500
-NoConn ~ 4100 3600
 Text HLabel 4950 2700 2    50   Input ~ 0
 CORE_DVS
 Wire Wire Line
 	4100 2700 4950 2700
-Text HLabel 6600 2500 2    50   Input ~ 0
+Text HLabel 4950 2500 2    50   Input ~ 0
 I2C1_SDA
-Text HLabel 6600 2600 2    50   Input ~ 0
+Text HLabel 4950 2600 2    50   Input ~ 0
 I2C1_SCL
-Wire Wire Line
-	4100 2500 6000 2500
-Wire Wire Line
-	4100 2600 5600 2600
 $Comp
 L require:RK3308 U1000
 U 9 1 5C4EF247
 P 8300 9500
-F 0 "U1000" H 8906 10487 60  0000 C CNN
-F 1 "RK3308" H 8906 10381 60  0000 C CNN
+F 0 "U1000" H 8450 10450 60  0000 C CNN
+F 1 "RK3308" H 8450 10350 60  0000 C CNN
 F 2 "" H 8300 13750 60  0001 C CNN
 F 3 "" H 8300 13750 60  0001 C CNN
 	9    8300 9500
@@ -401,36 +395,6 @@ Wire Wire Line
 	9500 9200 10400 9200
 Wire Wire Line
 	9500 9300 10400 9300
-$Comp
-L Device:R R?
-U 1 1 5C4FA3AC
-P 9600 9750
-AR Path="/5CED3BD3/5C4FA3AC" Ref="R?"  Part="1" 
-AR Path="/5C87E279/5C4FA3AC" Ref="R72"  Part="1" 
-F 0 "R72" V 9500 9750 50  0000 C CNN
-F 1 "133R,1%" V 9700 9750 50  0000 C CNN
-F 2 "require:R_0402" V 9530 9750 50  0001 C CNN
-F 3 "~" H 9600 9750 50  0001 C CNN
-	1    9600 9750
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9500 9400 9600 9400
-Wire Wire Line
-	9600 9400 9600 9600
-Wire Wire Line
-	9600 9900 9600 10100
-$Comp
-L power:GND #PWR0154
-U 1 1 5C61BAAB
-P 9600 10100
-F 0 "#PWR0154" H 9600 9850 50  0001 C CNN
-F 1 "GND" H 9605 9927 50  0000 C CNN
-F 2 "" H 9600 10100 50  0001 C CNN
-F 3 "" H 9600 10100 50  0001 C CNN
-	1    9600 10100
-	1    0    0    -1  
-$EndComp
 Text HLabel 10400 7400 2    50   Input ~ 0
 A0
 Text HLabel 10400 7500 2    50   Input ~ 0
@@ -481,94 +445,27 @@ Text HLabel 11350 2650 2    50   Input ~ 0
 D1
 Text HLabel 11350 2750 2    50   Input ~ 0
 D2
-$Comp
-L Device:R R?
-U 1 1 5C80A816
-P 6000 2250
-AR Path="/5C2D00B3/5C80A816" Ref="R?"  Part="1" 
-AR Path="/5C80A816" Ref="R?"  Part="1" 
-AR Path="/5C87E279/5C80A816" Ref="R1"  Part="1" 
-F 0 "R1" H 5850 2200 50  0000 C CNN
-F 1 "22R" H 5850 2300 50  0000 C CNN
-F 2 "require:R_0402" V 5930 2250 50  0001 C CNN
-F 3 "~" H 6000 2250 50  0001 C CNN
-	1    6000 2250
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5C80A81D
-P 5600 2250
-AR Path="/5C2D00B3/5C80A81D" Ref="R?"  Part="1" 
-AR Path="/5C80A81D" Ref="R?"  Part="1" 
-AR Path="/5C87E279/5C80A81D" Ref="R2"  Part="1" 
-F 0 "R2" H 5450 2200 50  0000 C CNN
-F 1 "22R" H 5450 2300 50  0000 C CNN
-F 2 "require:R_0402" V 5530 2250 50  0001 C CNN
-F 3 "~" H 5600 2250 50  0001 C CNN
-	1    5600 2250
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5600 2100 5600 2000
-Wire Wire Line
-	5600 2000 6000 2000
-Wire Wire Line
-	6000 2000 6000 2100
-Wire Wire Line
-	6000 2000 6000 1900
-Connection ~ 6000 2000
-Wire Wire Line
-	5600 2400 5600 2600
-Connection ~ 5600 2600
-Wire Wire Line
-	5600 2600 6600 2600
-Wire Wire Line
-	6000 2400 6000 2500
-Connection ~ 6000 2500
-Wire Wire Line
-	6000 2500 6600 2500
-$Comp
-L Device:R R?
-U 1 1 5C615982
-P 4450 1800
-AR Path="/5C2D00B3/5C615982" Ref="R?"  Part="1" 
-AR Path="/5C615982" Ref="R?"  Part="1" 
-AR Path="/5C87E279/5C615982" Ref="R62"  Part="1" 
-F 0 "R62" V 4350 1700 50  0000 C CNN
-F 1 "2.2k" V 4350 1900 50  0000 C CNN
-F 2 "require:R_0402" V 4380 1800 50  0001 C CNN
-F 3 "~" H 4450 1800 50  0001 C CNN
-	1    4450 1800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4300 1800 4100 1800
-Wire Wire Line
-	4600 1800 4800 1800
-$Comp
-L power:GND #PWR0232
-U 1 1 5C61CEBE
-P 4800 1800
-F 0 "#PWR0232" H 4800 1550 50  0001 C CNN
-F 1 "GND" V 4805 1672 50  0000 R CNN
-F 2 "" H 4800 1800 50  0001 C CNN
-F 3 "" H 4800 1800 50  0001 C CNN
-	1    4800 1800
-	0    -1   -1   0   
-$EndComp
 NoConn ~ 4100 2400
-$Comp
-L power:+3V3 #PWR0180
-U 1 1 5C7F6AD8
-P 6000 1900
-F 0 "#PWR0180" H 6000 1750 50  0001 C CNN
-F 1 "+3V3" H 6015 2073 50  0000 C CNN
-F 2 "" H 6000 1900 50  0001 C CNN
-F 3 "" H 6000 1900 50  0001 C CNN
-	1    6000 1900
-	1    0    0    -1  
-$EndComp
 NoConn ~ 4100 2200
 NoConn ~ 4100 2300
+Text HLabel 4950 3500 2    50   Input ~ 0
+D17
+Wire Wire Line
+	4950 3500 4100 3500
+Text HLabel 4950 3600 2    50   Input ~ 0
+D18
+Wire Wire Line
+	4100 3600 4950 3600
+Wire Wire Line
+	4100 2500 4950 2500
+Wire Wire Line
+	4100 2600 4950 2600
+Text HLabel 10400 9400 2    50   Input ~ 0
+USB_EXTR
+Wire Wire Line
+	9500 9400 10400 9400
+Wire Wire Line
+	4100 1800 4950 1800
+Text HLabel 4950 1800 2    50   Input ~ 0
+EMMC_VSEL
 $EndSCHEMATC

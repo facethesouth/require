@@ -1,4 +1,4 @@
 (sym_lib_table
-  (lib (name require-rescue)(type Legacy)(uri ${KIPRJMOD}/require-rescue.lib)(options "")(descr ""))
+  (lib (name require-rescue)(type Legacy)(uri ${KIPRJMOD}/require-rescue.lib)(options "")(descr "")(disabled))
   (lib (name require)(type Legacy)(uri ${KIPRJMOD}/lib/require.lib)(options "")(descr ""))
 )

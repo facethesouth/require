@@ -28,19 +28,6 @@ F 3 "" H 3250 1400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L require-rescue:C C203
-U 1 1 5CCCBB41
-P 6200 1650
-AR Path="/5C2CD8AE/5CCCBB41" Ref="C203"  Part="1" 
-AR Path="/5C325762/5CCCBB41" Ref="C?"  Part="1" 
-F 0 "C203" H 6300 1700 50  0000 L CNN
-F 1 "22u" H 6300 1600 50  0000 L CNN
-F 2 "require:C_0603" H 6300 1500 50  0000 C CNN
-F 3 "" H 6200 1650 50  0001 C CNN
-	1    6200 1650
-	1    0    0    -1  
-$EndComp
-$Comp
 L require-rescue:GND #PWR0163
 U 1 1 5CCCBB48
 P 6200 2000
@@ -63,7 +50,7 @@ Connection ~ 2150 1300
 Wire Wire Line
 	6200 1800 6200 2000
 $Comp
-L require-rescue:L L200
+L Device:L L200
 U 1 1 5CCCBB64
 P 4550 1300
 AR Path="/5C2CD8AE/5CCCBB64" Ref="L200"  Part="1" 
@@ -78,7 +65,7 @@ $EndComp
 Wire Wire Line
 	6200 1300 6200 1500
 $Comp
-L require-rescue:R R201
+L Device:R R201
 U 1 1 5CCCBB6C
 P 5000 1650
 AR Path="/5C2CD8AE/5CCCBB6C" Ref="R201"  Part="1" 
@@ -91,7 +78,7 @@ F 3 "" H 5000 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L require-rescue:R R202
+L Device:R R202
 U 1 1 5CCCBB73
 P 5000 2550
 AR Path="/5C2CD8AE/5CCCBB73" Ref="R202"  Part="1" 
@@ -154,7 +141,7 @@ F 3 "" H 5000 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L require-rescue:C C202
+L Device:C C202
 U 1 1 5CCCBB96
 P 5600 2550
 AR Path="/5C2CD8AE/5CCCBB96" Ref="C202"  Part="1" 
@@ -176,7 +163,7 @@ Wire Wire Line
 Wire Wire Line
 	5600 1950 5600 1300
 $Comp
-L require-rescue:R R213
+L Device:R R213
 U 1 1 5CCCBBA2
 P 2750 2900
 AR Path="/5C2CD8AE/5CCCBBA2" Ref="R213"  Part="1" 
@@ -189,7 +176,7 @@ F 3 "" H 2750 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L require-rescue:R R212
+L Device:R R212
 U 1 1 5CCCBBA9
 P 3100 3250
 AR Path="/5C2CD8AE/5CCCBBA9" Ref="R212"  Part="1" 
@@ -202,7 +189,7 @@ F 3 "" H 3100 3250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L require-rescue:R R211
+L Device:R R211
 U 1 1 5CCCBBB0
 P 3450 3600
 AR Path="/5C2CD8AE/5CCCBBB0" Ref="R211"  Part="1" 
@@ -215,7 +202,7 @@ F 3 "" H 3450 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L require-rescue:C C210
+L Device:C C210
 U 1 1 5CCCBBB7
 P 3850 3600
 AR Path="/5C2CD8AE/5CCCBBB7" Ref="C210"  Part="1" 
@@ -228,7 +215,7 @@ F 3 "" H 3850 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L require-rescue:R R210
+L Device:R R210
 U 1 1 5CCCBBBE
 P 4200 3250
 AR Path="/5C2CD8AE/5CCCBBBE" Ref="R210"  Part="1" 
@@ -339,7 +326,7 @@ F 3 "" H 3250 4700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L require-rescue:C C223
+L Device:C C223
 U 1 1 5CD09078
 P 6200 4950
 AR Path="/5C2CD8AE/5CD09078" Ref="C223"  Part="1" 
@@ -374,7 +361,7 @@ Connection ~ 2150 4600
 Wire Wire Line
 	6200 5100 6200 5300
 $Comp
-L require-rescue:L L220
+L Device:L L220
 U 1 1 5CD0909B
 P 4550 4600
 AR Path="/5C2CD8AE/5CD0909B" Ref="L220"  Part="1" 
@@ -449,7 +436,7 @@ F 3 "" H 5000 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L require-rescue:C C222
+L Device:C C222
 U 1 1 5CD090C4
 P 5600 4950
 AR Path="/5C2CD8AE/5CD090C4" Ref="C222"  Part="1" 
@@ -523,7 +510,7 @@ F 3 "" H 3250 6800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L require-rescue:C C233
+L Device:C C233
 U 1 1 5CD9D5E0
 P 6200 7050
 AR Path="/5C2CD8AE/5CD9D5E0" Ref="C233"  Part="1" 
@@ -560,7 +547,7 @@ Connection ~ 2150 6700
 Wire Wire Line
 	6200 7200 6200 7400
 $Comp
-L require-rescue:L L230
+L Device:L L230
 U 1 1 5CD9D603
 P 4550 6700
 AR Path="/5C2CD8AE/5CD9D603" Ref="L230"  Part="1" 
@@ -576,7 +563,7 @@ $EndComp
 Wire Wire Line
 	6200 6700 6200 6900
 $Comp
-L require-rescue:R R232
+L Device:R R232
 U 1 1 5CD9D60B
 P 5000 7050
 AR Path="/5C2CD8AE/5CD9D60B" Ref="R232"  Part="1" 
@@ -608,7 +595,7 @@ $EndComp
 Text Notes 4100 6500 0    50   ~ 0
 Murata DFE252012R-H-2R2M#\n
 $Comp
-L require-rescue:R R233
+L Device:R R233
 U 1 1 5CD9D61E
 P 5000 7750
 AR Path="/5C2CD8AE/5CD9D61E" Ref="R233"  Part="1" 
@@ -822,19 +809,6 @@ F 3 "" H 2150 6600 50  0001 C CNN
 	1    2150 6600
 	1    0    0    -1  
 $EndComp
-$Comp
-L require-rescue:C C204
-U 1 1 5C673666
-P 6800 1650
-AR Path="/5C2CD8AE/5C673666" Ref="C204"  Part="1" 
-AR Path="/5C325762/5C673666" Ref="C?"  Part="1" 
-F 0 "C204" H 6900 1700 50  0000 L CNN
-F 1 "22u" H 6900 1600 50  0000 L CNN
-F 2 "require:C_0603" H 6900 1500 50  0000 C CNN
-F 3 "" H 6800 1650 50  0001 C CNN
-	1    6800 1650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6200 1300 6800 1300
 Wire Wire Line
@@ -931,19 +905,6 @@ F 3 "" H 8950 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 9350 4650
-$Comp
-L require-rescue:L L250
-U 1 1 5C65F0BE
-P 10300 4450
-AR Path="/5C2CD8AE/5C65F0BE" Ref="L250"  Part="1" 
-AR Path="/5C325762/5C65F0BE" Ref="L?"  Part="1" 
-F 0 "L250" V 10400 4450 50  0000 C CNN
-F 1 "2.2u" V 10500 4450 50  0000 C CNN
-F 2 "Inductors_SMD:L_0603" H 10300 4450 50  0001 C CNN
-F 3 "" H 10300 4450 50  0001 C CNN
-	1    10300 4450
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	9950 4450 10150 4450
 Wire Wire Line
@@ -953,7 +914,7 @@ Wire Wire Line
 Wire Wire Line
 	10650 4550 10650 4450
 $Comp
-L require-rescue:C C251
+L Device:C C251
 U 1 1 5C66BA37
 P 10650 4800
 AR Path="/5C2CD8AE/5C66BA37" Ref="C251"  Part="1" 
@@ -1070,14 +1031,14 @@ $EndComp
 Wire Wire Line
 	2150 4800 3450 4800
 $Comp
-L require-rescue:C C?
+L Device:C C?
 U 1 1 5C6C99C8
 P 950 1850
 AR Path="/5C6C99C8" Ref="C?"  Part="1" 
 AR Path="/5C2CD8AE/5C6C99C8" Ref="C200"  Part="1" 
 AR Path="/5C325762/5C6C99C8" Ref="C?"  Part="1" 
 F 0 "C200" H 1050 1900 50  0000 L CNN
-F 1 "0.1u,10V" H 1050 1800 50  0000 L CNN
+F 1 "0.1u" H 1050 1800 50  0000 L CNN
 F 2 "require:C_0402" H 988 1700 50  0001 C CNN
 F 3 "" H 950 1850 50  0001 C CNN
 	1    950  1850
@@ -1321,4 +1282,169 @@ F 3 "" H 2150 7600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2150 7400 2150 7600
+$Comp
+L Device:L L250
+U 1 1 5C7C4941
+P 10300 4450
+AR Path="/5C2CD8AE/5C7C4941" Ref="L250"  Part="1" 
+AR Path="/5C325762/5C7C4941" Ref="L?"  Part="1" 
+AR Path="/5C2F0873/5C7C4941" Ref="L?"  Part="1" 
+F 0 "L250" V 10400 4450 50  0000 C CNN
+F 1 "0.24u,3A" V 10500 4450 50  0000 C CNN
+F 2 "Inductors_SMD:L_0603" H 10300 4450 50  0001 C CNN
+F 3 "" H 10300 4450 50  0001 C CNN
+	1    10300 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C203
+U 1 1 5C833838
+P 6200 1650
+AR Path="/5C2CD8AE/5C833838" Ref="C203"  Part="1" 
+AR Path="/5C325762/5C833838" Ref="C?"  Part="1" 
+F 0 "C203" H 6300 1700 50  0000 L CNN
+F 1 "22u" H 6300 1600 50  0000 L CNN
+F 2 "require:C_0603" H 6238 1500 50  0001 C CNN
+F 3 "" H 6200 1650 50  0001 C CNN
+	1    6200 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C204
+U 1 1 5C8338C6
+P 6800 1650
+AR Path="/5C2CD8AE/5C8338C6" Ref="C204"  Part="1" 
+AR Path="/5C325762/5C8338C6" Ref="C?"  Part="1" 
+F 0 "C204" H 6900 1700 50  0000 L CNN
+F 1 "22u" H 6900 1600 50  0000 L CNN
+F 2 "require:C_0603" H 6838 1500 50  0001 C CNN
+F 3 "" H 6800 1650 50  0001 C CNN
+	1    6800 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L require:LM3281 U255
+U 1 1 5CA6F613
+P 9650 3050
+F 0 "U255" H 9650 3515 50  0000 C CNN
+F 1 "LM3281" H 9650 3424 50  0000 C CNN
+F 2 "require:LM3281_DSBGA6" H 9650 3050 50  0001 C CNN
+F 3 "" H 9650 3050 50  0001 C CNN
+	1    9650 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L require-rescue:C C2551
+U 1 1 5CA6F70F
+P 8450 3100
+AR Path="/5C2CD8AE/5CA6F70F" Ref="C2551"  Part="1" 
+AR Path="/5C325762/5CA6F70F" Ref="C?"  Part="1" 
+F 0 "C2551" H 8550 3150 50  0000 L CNN
+F 1 "2.2u" H 8550 3050 50  0000 L CNN
+F 2 "require:C_0402" H 8488 2950 50  0001 C CNN
+F 3 "" H 8450 3100 50  0001 C CNN
+	1    8450 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 2850 9150 2850
+Wire Wire Line
+	8450 2850 8450 2950
+Wire Wire Line
+	9250 2950 9150 2950
+Wire Wire Line
+	9150 2950 9150 2850
+Connection ~ 9150 2850
+Wire Wire Line
+	9150 2850 8450 2850
+Wire Wire Line
+	9250 3150 9150 3150
+Wire Wire Line
+	9150 3150 9150 3250
+Wire Wire Line
+	9150 3250 9250 3250
+Wire Wire Line
+	9150 3250 9150 3350
+Connection ~ 9150 3250
+$Comp
+L power:GND #PWR0232
+U 1 1 5CA8588D
+P 9150 3350
+F 0 "#PWR0232" H 9150 3100 50  0001 C CNN
+F 1 "GND" H 9155 3177 50  0000 C CNN
+F 2 "" H 9150 3350 50  0001 C CNN
+F 3 "" H 9150 3350 50  0001 C CNN
+	1    9150 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 3250 8450 3350
+$Comp
+L power:GND #PWR0242
+U 1 1 5CA8B6C8
+P 8450 3350
+F 0 "#PWR0242" H 8450 3100 50  0001 C CNN
+F 1 "GND" H 8455 3177 50  0000 C CNN
+F 2 "" H 8450 3350 50  0001 C CNN
+F 3 "" H 8450 3350 50  0001 C CNN
+	1    8450 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L255
+U 1 1 5CA8B856
+P 10300 2850
+AR Path="/5C2CD8AE/5CA8B856" Ref="L255"  Part="1" 
+AR Path="/5C325762/5CA8B856" Ref="L?"  Part="1" 
+AR Path="/5C2F0873/5CA8B856" Ref="L?"  Part="1" 
+F 0 "L255" V 10400 2850 50  0000 C CNN
+F 1 "0.47u,3A" V 10500 2850 50  0000 C CNN
+F 2 "Inductors_SMD:L_0805" H 10300 2850 50  0001 C CNN
+F 3 "" H 10300 2850 50  0001 C CNN
+	1    10300 2850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10150 2850 10050 2850
+$Comp
+L require-rescue:C C2552
+U 1 1 5CA9189F
+P 10750 3100
+AR Path="/5C2CD8AE/5CA9189F" Ref="C2552"  Part="1" 
+AR Path="/5C325762/5CA9189F" Ref="C?"  Part="1" 
+F 0 "C2552" H 10850 3150 50  0000 L CNN
+F 1 "2.2u" H 10850 3050 50  0000 L CNN
+F 2 "require:C_0402" H 10788 2950 50  0001 C CNN
+F 3 "" H 10750 3100 50  0001 C CNN
+	1    10750 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10750 2850 10750 2950
+Wire Wire Line
+	10750 3250 10750 3350
+$Comp
+L power:GND #PWR0243
+U 1 1 5CA9D83E
+P 10750 3350
+F 0 "#PWR0243" H 10750 3100 50  0001 C CNN
+F 1 "GND" H 10755 3177 50  0000 C CNN
+F 2 "" H 10750 3350 50  0001 C CNN
+F 3 "" H 10750 3350 50  0001 C CNN
+	1    10750 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10450 2850 10550 2850
+Wire Wire Line
+	10550 2850 10550 3100
+Wire Wire Line
+	10550 3100 10300 3100
+Wire Wire Line
+	10300 3100 10300 3250
+Wire Wire Line
+	10300 3250 10050 3250
+Connection ~ 10550 2850
+Wire Wire Line
+	10550 2850 10750 2850
 $EndSCHEMATC

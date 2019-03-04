@@ -1175,11 +1175,6 @@ Wire Wire Line
 Wire Wire Line
 	3300 5550 3300 5450
 Connection ~ 3300 5450
-Wire Wire Line
-	3100 5650 3300 5650
-Wire Wire Line
-	3300 5650 3300 5550
-Connection ~ 3300 5550
 $Comp
 L Device:C C?
 U 1 1 5CF5F378
@@ -1232,18 +1227,6 @@ Wire Wire Line
 Connection ~ 3500 6050
 Wire Wire Line
 	4850 6150 4850 6450
-Wire Wire Line
-	3500 6350 3500 6450
-Wire Wire Line
-	3100 6450 3500 6450
-Connection ~ 3500 6450
-Wire Wire Line
-	3500 6450 3500 6550
-Wire Wire Line
-	3100 6550 3500 6550
-Connection ~ 3500 6550
-Wire Wire Line
-	3500 6550 3500 6650
 Wire Wire Line
 	3100 8050 3300 8050
 Wire Wire Line
@@ -1616,38 +1599,9 @@ Text Notes 4900 5300 0    50   ~ 0
 J14
 Text Notes 5400 5300 0    50   ~ 0
 D14/D13/E14
-$Comp
-L Device:C C?
-U 1 1 5C781190
-P 6050 5100
-AR Path="/5CED3BD3/5C781190" Ref="C?"  Part="1" 
-AR Path="/5C325762/5C781190" Ref="C259"  Part="1" 
-F 0 "C259" H 6165 5146 50  0000 L CNN
-F 1 "1u" H 6165 5055 50  0000 L CNN
-F 2 "require:C_0402" H 6088 4950 50  0001 C CNN
-F 3 "~" H 6050 5100 50  0001 C CNN
-	1    6050 5100
-	1    0    0    -1  
-$EndComp
+NoConn ~ 3100 5650
 Wire Wire Line
-	5450 4850 6050 4850
-Wire Wire Line
-	6050 4850 6050 4950
-$Comp
-L power:GND #PWR?
-U 1 1 5C7ABB6E
-P 6050 5350
-AR Path="/5CED3BD3/5C7ABB6E" Ref="#PWR?"  Part="1" 
-AR Path="/5C325762/5C7ABB6E" Ref="#PWR0110"  Part="1" 
-F 0 "#PWR0110" H 6050 5100 50  0001 C CNN
-F 1 "GND" H 6055 5177 50  0000 C CNN
-F 2 "" H 6050 5350 50  0001 C CNN
-F 3 "" H 6050 5350 50  0001 C CNN
-	1    6050 5350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6050 5250 6050 5350
-Text Notes 6100 5300 0    50   ~ 0
-P16
+	3500 6350 3500 6650
+NoConn ~ 3100 6450
+NoConn ~ 3100 6550
 $EndSCHEMATC

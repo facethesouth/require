@@ -350,7 +350,6 @@ Wire Wire Line
 	4100 1600 4950 1600
 NoConn ~ 4100 1500
 NoConn ~ 4100 1700
-NoConn ~ 4100 3100
 NoConn ~ 4100 3300
 Text HLabel 4950 2700 2    50   Input ~ 0
 CORE_DVS
@@ -468,4 +467,8 @@ Wire Wire Line
 	4100 1800 4950 1800
 Text HLabel 4950 1800 2    50   Input ~ 0
 EMMC_VSEL
+Wire Wire Line
+	4100 3100 4950 3100
+Text HLabel 4950 3100 2    50   Input ~ 0
+RTC_CLK
 $EndSCHEMATC

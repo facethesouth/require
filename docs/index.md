@@ -34,6 +34,7 @@ The hardware design file is licensed under GPL3.
 
 lewis#facethesouth.com
 
+[Design Note](design-note.md)
 
 
 

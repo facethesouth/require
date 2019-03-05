@@ -87,4 +87,14 @@ am335x 0.8mm pitch, 0.41 ball size;
 - TST: TimeSpeed（时晔科技）
 - WK: WeiKeng（威健）
 
+# Checklist
+
+## Footprint
+
+## Power and Ground
+
+## RF
+
+
+
 

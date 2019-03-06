@@ -1459,7 +1459,6 @@ F 3 "" H 12150 6950 50  0001 C CNN
 	1    12150 6950
 	1    0    0    -1  
 $EndComp
-NoConn ~ 13000 6350
 $Comp
 L Device:R R831
 U 1 1 5C797E3E
@@ -1554,7 +1553,7 @@ Connection ~ 11900 6450
 Wire Wire Line
 	11900 6450 11650 6450
 Wire Wire Line
-	12200 6450 13000 6450
+	12200 6450 12900 6450
 Wire Wire Line
 	6700 10150 7100 10150
 Wire Wire Line
@@ -1609,4 +1608,11 @@ Wire Wire Line
 Connection ~ 1950 5950
 Wire Wire Line
 	1950 5950 2350 5950
+Wire Wire Line
+	13000 6350 12900 6350
+Wire Wire Line
+	12900 6350 12900 6450
+Connection ~ 12900 6450
+Wire Wire Line
+	12900 6450 13000 6450
 $EndSCHEMATC

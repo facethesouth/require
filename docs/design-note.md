@@ -1,4 +1,4 @@
-# Overview
+# 1. Overview
 
 This document is for the hardware designer, or people who want to re-use the hardware design.
 
@@ -9,7 +9,7 @@ This document is for the hardware designer, or people who want to re-use the har
 - Wireless
 - Others
 
-# Power
+# 2. Power
 
 RK3308 has no strict requirement for power-on sequence, according to hardware guy from Rockhip.
 
@@ -21,13 +21,13 @@ The power domains include:
     + +3V3 (IO)
         + 1V8
         + 1V8A
-    + VDDR (+1.5V or 1.35V)
+    + VDDR (+1V5)
     + +1V0C for arm core
     + +1V0L for cpu logic
         + 1V0
 
 
-## +5V
+## 2.1. +5V
 
 `+5V` is the input power domain. 
 
@@ -42,7 +42,7 @@ All step-down dc-dc converters use +5V as input. All input capacitors should use
 > Checklist
 > - all C<sub>in</sub> use 0805 package. 
 
-## +3V3
+## 2.2. +3V3
 
 This domain is powered by a PAM2305 step-down, with 1A output.
 
@@ -64,17 +64,43 @@ Two 2.2uH 0806 inductors are connected in parallel as the buck inductor. This im
 > - good power and ground connection for C<sub>in</sub> and C<sub>out</sub>
 > - correct values for fb resistors. 540k and 120k respectively.
 
-### +1V8 & +1V8A
+### 2.2.1. +1V8 & +1V8A
 
-This domain has very light load and is powered by a tiny LDO. It is placed at the bottom side of MPU, where a large amount of capacitors are spreaded for various MPU power supplies.
+These two domains have very light load and are powered by a tiny LDO. They are connected by a ferrite bead (F269) and decoupled by 0.1uF capacitors respectively.
 
-There are three parts can be used.
++1V8 has the following load:
 
-- OnSemi NCP707
-- Ricoh
-- TI TLV713
++ PLL_AVDD_1V8 (~2mA)
++ SARDAC_AVDD_1V8 (?)
++ OTP_AVDD_1V8 (?)
++ POR and Reset
 
-## VDDR (+1V5)
+CODEC_AVDD_1V8 is not connected.
+
++1V8A has the following load:
+
++ USB_AVDD_1V8 (~5mA)
+
+The LDO is placed at the bottom side of PCB, where MPU is mounted on the top side and dozens of capacitors are spreaded for various MPU power supplies.
+
+It has a 1x1mm<sup>2</sup> DFN package with four pins and a thermal pad. Several vendors have similar parts but they use different name for the package.
+
+- Diodes, X2-DFN1010-4
+- OnSemi, XDFN4, NCP707
+    + NCP707CMX180TCG (120Ω discharge), ￥0.69 @1k on LC
+    + NCP707BMX180TCG (no discharge), ￥0.68 @1k on LC
+    + NCP707AMX180TCG (1.2k discharge)
+- Ricoh, DFN(PLP)1010-4, DFN(PLP)1010-4B, RP114 series
+- TI, X2SON-4, TLV713, 150mA
+    + TLV71318PDQNR, available on LC. No 1k volume price.
+- Microchip/Micrel, 4-TDFN (1x1mm)
+
+TLV713 could work with or without the output capacitor.
+
+> Checklist
+> - 1u capacitors for C<sub>in</sub> and C<sub>out</sub>.
+
+## 2.3. VDDR (+1V5)
 
 This domain is powered by a PAM2305 step-down, with 1A output.
 
@@ -86,7 +112,7 @@ This power domain is exclusively used by DDR3 and DDR controller of MPU. The tot
 > - good power and ground connection ofr C<sub>in</sub> and C<sub>out</sub>
 > - correct values for fb resistors. 150k and 100k respectively.
 
-## 1V0C
+## 2.4. +1V0C
 
 This domain is powered by a SY8089 step-down, with 2A output.
 
@@ -106,11 +132,11 @@ SY8089 datasheet recommends dual 22uF capacitors as C<sub>out</sub>.
 > - good power and ground connection for C<sub>in</sub> and C<sub>out</sub>
 > - correct values for all resistors and capacitors, the same as reference design.
 
-## 1V0L
+## 2.5. +1V0L
 
-This domain is powered by PAM2305 step down with 1A output.
+This domain is powered by a PAM2305 step-down converter with 1A output.
 
-The domain supplies all logic circuit of MPU. Since many on-chip components are not used, such as lcdc, eth, and i2s, the actual load is supposed to be well below the 1A limit. So a 2.2u 0806 inductor is used as buck inductor and a 10uF 0603 capacitor used as C<sub>out</sub>.
+The domain supplies all logic circuit of MPU. Since many on-chip components are not used, such as lcdc, eth, and i2s, the actual load is supposed to be well below the 1A limit. A 2.2u 0806 inductor is used as buck inductor and a 10uF 0603 capacitor used as C<sub>out</sub>.
 
 > Checklist
 > - 0805 package for C<sub>in</sub>, 0806 package for L
@@ -118,29 +144,65 @@ The domain supplies all logic circuit of MPU. Since many on-chip components are 
 > - good power and ground connection for C<sub>in</sub> and C<sub>out</sub>
 > - correct values for all resistors and capacitors, the same as reference design.
 
-### 1V0
+### 2.5.1. +1V0
 
-1V0 shares the same power supply with 1V0L, with a ferrite-bead to suppress high frequency noise.
+1V0 shares the same power supply with 1V0L, with a ferrite-bead (F229) to suppress high-frequency noise.
 
-## DDR
+The load includes:
+
++ PLL_AVDD_1V0
++ USB_DVDD_1V0
+
+Two pins are tied together on board. One 0.1uF capacitor used for decoupling.
+
+# 3. DDR
+
+## 3.1. Power
 
 - VDDR and Ground trace width 0.4mm
 - 0.1uF decoupling capacitor for each VDDR pin
 - 3 10uF 0603 capacitors for total capacitance
 
-## MPU
+## 3.2. routing
 
-### core
+TBD
 
-### logic
+# 4. MPU
 
-### io domain
+## 4.1. Power
 
-### 
+### 4.1.1. core
 
-## EMMC
 
-## Wifi/Bt Combo
+
+### 4.1.2. logic
+
+
+
+
+### 4.1.3. io domain
+
+
+
+
+### 4.1.4. sar
+
+
+## 
+
+##
+
+
+
+# 5. EMMC
+
+# 6. Wifi/Bt Combo
+
+# 7. Connectors
+
+## 7.1. Micro USB
+
+## 7.2. Pin Header
 
 
 

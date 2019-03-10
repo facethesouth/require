@@ -44,7 +44,7 @@ F16 "UART_RXD" I L 7800 4800 50
 F17 "LPO" I L 7800 5050 50 
 $EndSheet
 $Sheet
-S 7800 1600 1700 1050
+S 7800 1650 1700 1050
 U 5C2F0873
 F0 "ddr" 60
 F1 "ddr.sch" 60
@@ -52,8 +52,8 @@ $EndSheet
 $Sheet
 S 3800 1650 1450 1050
 U 5C325762
-F0 "rk3308-power" 50
-F1 "rk3308-power.sch" 50
+F0 "rk3308-power" 60
+F1 "rk3308-power.sch" 60
 F2 "RESET" I R 5250 2400 50 
 $EndSheet
 $Sheet
@@ -1030,8 +1030,6 @@ F 3 "" H 3250 10100 50  0001 C CNN
 	1    3250 10100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5250 2400 5600 2400
 Text Label 5350 2400 0    50   ~ 0
 RESET
 $Comp
@@ -1412,7 +1410,7 @@ L Device:R R850
 U 1 1 5C774BC5
 P 11900 6150
 F 0 "R850" H 11970 6196 50  0000 L CNN
-F 1 "4.7k" H 11970 6105 50  0000 L CNN
+F 1 "10k" H 11970 6105 50  0000 L CNN
 F 2 "require:R_0402" V 11830 6150 50  0001 C CNN
 F 3 "~" H 11900 6150 50  0001 C CNN
 	1    11900 6150
@@ -1615,4 +1613,6 @@ Wire Wire Line
 Connection ~ 12900 6450
 Wire Wire Line
 	12900 6450 13000 6450
+Wire Wire Line
+	5250 2400 5800 2400
 $EndSCHEMATC

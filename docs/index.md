@@ -1,18 +1,21 @@
-# Introduction
+# Brief Introduction
 
-Hug board is a headless and wireless arm/linux board designed for iot.
+`rquire` (pronounced the same as `require`) board is a compact and low-cost arm/linux board designed for wireless and headless iot applications.
 
-It is based on Rockchip RK3308 platform, equipped with
+`rquire` is based on Rockchip RK3308 platform, equipped with
 
-+ quad-core Cortex A35
-+ 256MB or 512MB DDR3
-+ 8GB on-board EMMC
-+ wifi/bt combo (Ampak AP6255), with dual-band 1T1R 802.11ac and bluetooth 4.2
-+ microchip crypto auth chip (ATECC508a)
-+ one micro USB receptable for power supply as well as data transfer (device mode)
-+ one host mode usb port is provided through pin headers
++ a quad-core cortex A35 processor
++ 256MB or 512MB DDR3 ram
++ 8GB or 16GB EMMC on board
++ a wifi/bt combo module (Ampak AP6255), with dual-band 1T1R 802.11ac and bluetooth 4.2 support and on-board high performance chip antenna
++ Crypto-authentication device from Microchip (ATECC508a)
++ one micro USB receptable for power supply and data transfer (device mode only)
 + one user button and one LED
-+ a bunch of analog and digital IO, which could be muxed to i2c, spi, uart, pwm etc.
++ standard 2.54mm pin headers with:
+    + power supply
+    + serial debug port
+    + a usb host
+    + a bunch of digital IOs that could be muxed to i2c, spi, uart, pwm etc.
 
 Neither LCD/HDMI nor ETH port provided.
 
@@ -32,9 +35,18 @@ KiCAD is used as the EDA software for this project.
 
 The hardware design file is licensed under GPL3. 
 
+# Hardware Design Notes
+
+The following documents are for hardware designers who want to reuse the design.
+
++ [schematics](schematics.md)
++ [pcb](pcb.md)
++ [bom](bom.md)
++ [gerber & drill](gerber-and-drill.md)
+
 lewis#facethesouth.com
 
-[Design Note](design-note.md)
+
 
 
 

@@ -1,8 +1,8 @@
-# Brief Introduction
+# Introduction
 
-`rquire` (pronounced the same as `require`) board is a compact and low-cost arm/linux board designed for wireless and headless iot applications.
+`rquire` (pronounced the same as `require`) board is a compact and low-cost arm/linux board designed for wireless (and headless) iot applications.
 
-`rquire` is based on Rockchip RK3308 platform, equipped with
+`rquire` is built on Rockchip RK3308 platform, equipped with:
 
 + a quad-core cortex A35 processor
 + 256MB or 512MB DDR3 ram
@@ -21,9 +21,9 @@ Neither LCD/HDMI nor ETH port provided.
 
 No on-board mmc card socket either. Instead, rockchip provides a USB boot mode, which could be used to manually reflash the whole emmc. If the system works fine and the re-partition is not required, rootfs could be upgraded over network.  
 
-To simplify the design, both wifi/sdio and emmc use only 3.3V high-speed mode. There would be a negative impact on io performance due to the lower io speed, but it's OK for most iot applications.
+To simplify the design, both wifi/sdio and emmc use only 3.3V high-speed mode. There would be a negative impact on io performance due to relatively lower io speed, but it's OK for most iot applications.
 
-Hug is not intended to be (yet) another linux SBC. It is firstly designed as a compute module for wireless iot nodes. Then very few components are added to make it more friendly for development and debugging. The added cost and pcb area are negligible (a usb connector, a pair of resistors, and an ESD diode). 
+`rquire` is not intended to be (yet) another linux SBC. It is firstly designed as a compute module for wireless iot nodes. Then very few components are added to make it more friendly for development and debugging. The added cost and pcb area are negligible (a usb connector, a pair of resistors, and an ESD diode). 
 
 The board measures only 68mm by 26mm, which is quite small for arm/linux board, and acceptable for most embedded systems. It could be powered through pins with a voltage from ~3.4 to 5V.
 

@@ -1,53 +1,40 @@
 # 1. Overview
 
-This document is for the hardware designer, or people who want to re-use the hardware design.
+The free and open source EDA software, KiCAD, is used for design. 
 
-The schematics are split to 7 sheets organized into a hierarchy, which is mandatory for KiCAD. 
+The schematics are split into 7 sheets, organized in a hierarchy. This is mandatory for KiCAD. 
 
-`require.sch` is the top level sheet, containing all other sub-sheets and their connections. It also includes:
+- `require.sch` is the top level schematic, containing all other sub-sheets,  their connections and miscellaneous parts.
+- `power.sch` includes DC/DC and LDO circuits.
+- `rk3328-power.sch` includes the processor's power, clock, and reset circuits.
+- `ddr.sch` includes the DDR3 circuits.
+- `emmc.sch` includes emmc circuits.
+- `wireless.sch` includes the AP6255 wifi/bt combo and its peripherals.
+- `rk3308-io.sch` encapsulates rk3308's analog and digital IO used (or exported) in this design.
 
-+ connectors
-+ switch
-+ LED
-+ microchip's ec chip
-+ mounting holes
-+ miscellaneous parts and connections
-
-`power.sch` includes DC/DC and LDO circuits.
-
-`rk3328-power.sch` includes MPU's power, clock, and reset circuits.
-
-`ddr.sch` includes the MPU's ddr controller and DDR3 circuits.
-
-`emmc.sch` includes emmc circuits.
-
-`wireless.sch` includes the AP6255 wifi/bt combo and its peripherals.
-
-`rk3308-io.sch` encapsulates rk3308's analog and digital IO used (or exported) in this design.
-
-RK3308 has the following interfaces:
+RK3308 has the following peripherals:
 
 + three mmc controllers:
     + emmc, connected to emmc chip
-    + sdio, connected to wireless module
+    + sdio, connected to wireless module (wifi)
     + sdmmc, not used
 + LCD controller, not used
 + Fast Ethernet, not used
 + audio/i2s and codec, not used
 + usb0, connected to micro usb connector, device mode only, no otg
 + usb1, connected to pin header, host only
-+ saradc, analog io, 1 used for hardware versioning, others exported via pin header
++ saradc and 6 adc pins. One of them is used for hardware versioning. Others are exported via pin header
 + spi, i2c, uart, pwm, gpio etc. 
     + 1 uart connected to bluetooth on board
-    + 1 i2c connected to ecc chip on board
+    + 1 i2c connected to ecc chip on board and not exported via pin header.
     + 1 gpio for LED and 1 for switch
-    + some of the remaining low-speed io are exported via pin header
+    + some of the remaining low-speed digital IOs are exported via pin header
 
 # 2. Power.sch
 
 RK3308 has no strict requirement for power-on sequence, according to hardware guy from Rockhip.
 
-Hug board uses discrete power ICs to implement the power supply. 
+`rquire` board uses discrete power ICs to implement the power supply. 
 
 There are following power domains:
 
@@ -203,23 +190,21 @@ The load includes:
 
 Two pins are tied together on board. A 0.1u cap is used for decoupling.
 
-# 3. MPU
+# 3. rk3308-power.sch
 
-## 3.1. Power
-
-### 3.1.1. core
+## 3.1. core domain power
 
 Reference design use 1 22u and 3 0.1u caps, with an additional 4.7u cap marked as DNP.
 
 Hug uses 1 22u, 1 2.2u, and 2 0.1u caps. No additional DNP footprint.
 
-### 3.1.2. logic
+## 3.2. logic domain power
 
 Reference design use 1 10u and 2 0.1u caps, with an additional 4.7u cap marked as DNP.
 
 Hug uses 1 10u and 1 0.1u caps. No additional DNP footprint.
 
-### 3.1.3. io, usb, pll, saradc, otp
+## 3.3. io, usb, pll, saradc, otp
 
 Reference design uses 0.1u caps for all VCCIOs and USB_AVDD_3V3.
 
@@ -231,11 +216,9 @@ PLL_AVDD_1V0 and USB_DVDD_1V0 are tied together.
 
 > murata BLM15PX181SN1 used as the ferrite bead, rating a 180ohm resistance at 100MHz and 1.5A current limit.
 
-### 3.1.4. codec
-
 codec is not used. CODEC_AVDD_3V3 and CODEC_AVDD_1V8 are not connected (floating).
 
-## 3.2. Clock
+## 3.4. Clock
 
 24MHz crystal used as MPU oscillator.
 
@@ -254,26 +237,24 @@ where C<sub>stray</sub> is 2~3p.
 > - 12p crystal load capacitance, 3225 package
 > - 22p for caps
 
-## 3.3. Reset
+## 3.5. Reset
 
 An open drain level-shift is implemented by a N-MOSFET and two pull-up resistors, providing a 3.3V reset signal.
 
 > Checklist
 > - 0.1u cap close to MPU's rest pin
 
-# 4. DDR
+# 4. ddr.sch
 
 ## 4.1. Power
 
-### 4.1.1. Power Plane
-
-### 4.1.2. MPU ddr controller
+### 4.1.1. ddr controller
 
 Reference design uses 1 10u and 3 0.1u caps, plus a 4.7u cap marked as DNP.
 
-Hug uses 1 10u and 2 0.1u caps
+`rquire` uses 1 10u and 2 0.1u caps.
 
-### 4.1.3. DDR3 chip
+### 4.1.2. ddr3 chip
 
 3 10u 0603 caps used to guarantee the total capacitance.
 
@@ -284,7 +265,7 @@ Each VDDR pin has one 0.1u decoupling cap. 17 caps in total.
 > - VDDR and Ground trace width 0.4mm.
 > - DDR power plane
 
-### 4.1.4. VREF
+### 4.1.3. VREF
 
 TBD
 
@@ -296,23 +277,30 @@ TBD
 
 120ohm zq, 100ohm termination (two 49.9ohm resistor), referencing ground.
 
-# 5. EMMC
+# 5. emmc.sch
 
-Standard 153-ball BGA package.
+eMMC uses standard 153-ball BGA package. 169-ball package is not supported for limited space.
 
-Both emmc core and io use 3.3V voltage for simplicity.
+Both emmc core and io use 3.3V voltage.
 
 The chip is mounted on the bottom side. All decoupling caps are mounted on the top side, crowdly sitting between CPU and wifi module.
 
 Besides the 1u VDDi cap, all other caps are grouped into 3 groups:
 
-1. 
+1. one 10u and two 0.1u caps, placed close to M4, N4, P3 and P5 io power pins. 
+2. one 2.2u and one 0.1u caps, placed close to C6 io power pins.
+3. one 10u and one 0.1u caps, placed close to E6, F5, J10 and K9 core power pins.
 
-
-
-
+If the emmc io changes to 1.8V volage to support HS200, the first two groups should be connected to 1.8V domain.
 
 # 6. Wifi/Bt Combo
+
+3.3V io voltage are used for the wireless module. SDIO_VSEL (pin 29) is grounded.
+
+From CYW43455 datasheet, the recommended parts:
+- L: 0806 size, 2.2 µH, DCR=0.11Ω, ACR=1.18Ω @ 4 MHz
+- C<sub>out</sub>:  Ceramic, X5R, 0402, ESR <30 mΩ at 4 MHz, 4.7 µF, ±20%, 6.3V
+- C<sub>in</sub>: For SR_VDDBATP5V pin, ceramic, X5R, 0603, ESR < 30 mΩ at 4 MHz, ±4.7uF ±20%, 6.3V
 
 ## 6.1. Power
 
@@ -330,6 +318,25 @@ A molex top-mount connector is used.
 
 ### 7.2.1. Definition
 
+# Schematic Symbols
+
+The following symbols are created in this design. Should be carefully checked.
+
+- require:ANT12 (antenna)
+- require:PESDUC3FD5VU (esd)
+- require:NPND_SOT_363 (dual npn transistor)
+- require:SW_SKSC_4PIN (alps tactic switch)
+- require:RK3308 (cpu)
+- require:SY8089AAC (step down)
+- require:NCP707_XDFN4 (ldo)
+- require:DDR3_FBGA96 (ram)
+- require:EMMC_BGA_153 (emmc)
+- require:ap6255 (wireless)
+- require:OP (header pin)
+- require:MountingHole
+- require:MountingHole_Pad
+
+Other symbols are reused from KiCAD's library.
 
 
 

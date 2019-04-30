@@ -1091,19 +1091,6 @@ F 3 "" H 13400 6500 50  0001 C CNN
 $EndComp
 Text Label 3000 3300 0    50   ~ 0
 EMMC_D0
-$Comp
-L require:OP RP?
-U 1 1 5C8D949C
-P 7800 9700
-AR Path="/5C70CDE2/5C8D949C" Ref="RP?"  Part="1" 
-AR Path="/5C8D949C" Ref="RP19"  Part="1" 
-F 0 "RP19" H 8050 9700 50  0000 C CNN
-F 1 "U" H 7800 9700 50  0000 C CNN
-F 2 "require:OVAL_PIN" H 7800 9650 50  0001 C CNN
-F 3 "" H 7800 9650 50  0001 C CNN
-	1    7800 9700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2800 8900 2900 8900
 $Comp
@@ -1594,25 +1581,6 @@ Wire Wire Line
 	12900 6450 13000 6450
 Wire Wire Line
 	5250 2400 5800 2400
-$Comp
-L Device:D_Schottky D400
-U 1 1 5C91F491
-P 7300 9700
-AR Path="/5C91F491" Ref="D400"  Part="1" 
-AR Path="/5CDAE2B6/5C91F491" Ref="D?"  Part="1" 
-F 0 "D400" H 7300 9484 50  0000 C CNN
-F 1 "RB521S" H 7300 9575 50  0000 C CNN
-F 2 "require:D_SOD-523" H 7300 9700 50  0001 C CNN
-F 3 "~" H 7300 9700 50  0001 C CNN
-	1    7300 9700
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7150 9700 6800 9700
-Text Label 6800 9700 0    50   ~ 0
-EMMC_D0
-Wire Wire Line
-	7450 9700 7600 9700
 $Comp
 L Device:R R?
 U 1 1 5C946245

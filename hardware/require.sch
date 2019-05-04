@@ -1322,28 +1322,6 @@ Wire Wire Line
 	12350 1800 12350 1900
 Wire Wire Line
 	12350 2450 12350 2550
-$Comp
-L Mechanical:MountingHole H1
-U 1 1 5C71E3C7
-P 11100 1650
-F 0 "H1" H 11200 1696 50  0000 L CNN
-F 1 "MountingHole" H 11200 1605 50  0000 L CNN
-F 2 "require:MTG_1.8mm_2.4mm_NPL" H 11100 1650 50  0001 C CNN
-F 3 "~" H 11100 1650 50  0001 C CNN
-	1    11100 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H2
-U 1 1 5C71E586
-P 11100 1950
-F 0 "H2" H 11200 1996 50  0000 L CNN
-F 1 "MountingHole" H 11200 1905 50  0000 L CNN
-F 2 "require:MTG_1.8mm_2.4mm_NPL" H 11100 1950 50  0001 C CNN
-F 3 "~" H 11100 1950 50  0001 C CNN
-	1    11100 1950
-	1    0    0    -1  
-$EndComp
 Text Label 6900 10150 0    50   ~ 0
 KEY
 Text Label 6900 10250 0    50   ~ 0

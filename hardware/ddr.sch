@@ -492,7 +492,7 @@ DDR_D6
 Text Label 10600 2550 0    60   ~ 0
 DDR_D2
 Text Label 10600 2650 0    60   ~ 0
-DDR_D5
+DDR_D4
 Text Label 10600 2750 0    60   ~ 0
 DDR_D0
 Text Label 10600 2850 0    60   ~ 0
@@ -502,7 +502,7 @@ DDR_D1
 Text Label 10600 3050 0    60   ~ 0
 DDR_D7
 Text Label 10600 3150 0    60   ~ 0
-DDR_D4
+DDR_D5
 Wire Wire Line
 	12600 5250 12600 5350
 Wire Wire Line

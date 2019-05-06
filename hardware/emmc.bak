@@ -136,12 +136,6 @@ Connection ~ 4300 2400
 Wire Wire Line
 	4100 2600 3900 2800
 Connection ~ 4100 2600
-Wire Wire Line
-	4900 1800 5100 1800
-Wire Wire Line
-	5100 1800 5300 1600
-Connection ~ 5100 1800
-Connection ~ 5300 1600
 NoConn ~ 5500 4200
 NoConn ~ 5300 4200
 NoConn ~ 5100 4200
@@ -179,8 +173,6 @@ NoConn ~ 6300 2000
 NoConn ~ 6100 2000
 NoConn ~ 5900 2000
 NoConn ~ 5500 2000
-NoConn ~ 5300 2000
-NoConn ~ 5100 2000
 NoConn ~ 5700 2000
 NoConn ~ 6100 2200
 NoConn ~ 6300 2200
@@ -479,19 +471,15 @@ $EndComp
 $Comp
 L Device:R R400
 U 1 1 5C5CEDA4
-P 2700 3400
-F 0 "R400" V 2600 3400 50  0000 C CNN
-F 1 "22R" V 2800 3400 50  0000 C CNN
-F 2 "require:R_0402" V 2630 3400 50  0001 C CNN
-F 3 "~" H 2700 3400 50  0001 C CNN
-	1    2700 3400
+P 2700 4000
+F 0 "R400" V 2600 4000 50  0000 C CNN
+F 1 "22R" V 2800 4000 50  0000 C CNN
+F 2 "require:R_0402" V 2630 4000 50  0001 C CNN
+F 3 "~" H 2700 4000 50  0001 C CNN
+	1    2700 4000
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2850 3400 3900 3400
 Connection ~ 3900 3400
-Text Label 3000 3400 0    50   ~ 0
-EMMC_CLK1
 $Comp
 L power:+3V3 #PWR0229
 U 1 1 5C7E8AA1
@@ -658,10 +646,6 @@ Wire Wire Line
 Wire Wire Line
 	3200 1300 3200 900 
 Wire Wire Line
-	3200 900  5300 900 
-Wire Wire Line
-	5300 900  5300 1600
-Wire Wire Line
 	2650 1900 2650 2400
 Wire Wire Line
 	2550 2000 2550 2800
@@ -673,8 +657,6 @@ Wire Wire Line
 	2450 3200 3900 3200
 Wire Wire Line
 	2350 3400 2350 2200
-Wire Wire Line
-	2350 3400 2550 3400
 Wire Wire Line
 	2250 3600 2250 2300
 Wire Wire Line
@@ -701,4 +683,18 @@ Wire Wire Line
 	2150 1900 2650 1900
 Wire Wire Line
 	2150 2000 2550 2000
+NoConn ~ 5300 1600
+Wire Wire Line
+	3200 900  5200 900 
+NoConn ~ 5100 1800
+NoConn ~ 5300 2000
+Wire Wire Line
+	4900 1800 5100 2000
+Wire Wire Line
+	5100 2000 5200 2000
+Wire Wire Line
+	5200 2000 5200 900 
+Connection ~ 5100 2000
+Wire Wire Line
+	2350 3400 3900 3400
 $EndSCHEMATC

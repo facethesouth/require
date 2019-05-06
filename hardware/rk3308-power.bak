@@ -736,8 +736,6 @@ F 3 "" H 9350 3700 50  0001 C CNN
 	1    9350 3700
 	1    0    0    -1  
 $EndComp
-Text Label 8600 5200 0    50   ~ 0
-RESET_1V8
 $Comp
 L Device:C C?
 U 1 1 5C4672BA
@@ -1003,21 +1001,6 @@ F 3 "~" H 9450 4950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9450 5200 9450 5100
-Wire Wire Line
-	9450 5200 9750 5200
-$Comp
-L Device:R R111
-U 1 1 5C7F3B7D
-P 10450 4950
-F 0 "R111" H 10520 4996 50  0000 L CNN
-F 1 "10k" H 10520 4905 50  0000 L CNN
-F 2 "require:R_0402" V 10380 4950 50  0001 C CNN
-F 3 "~" H 10450 4950 50  0001 C CNN
-	1    10450 4950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10150 5200 10450 5200
 Wire Wire Line
 	3700 4450 4300 4450
 Connection ~ 3700 4450
@@ -1308,15 +1291,6 @@ Wire Wire Line
 	8400 4200 9700 4200
 Wire Wire Line
 	8900 3500 8900 3400
-Wire Wire Line
-	9450 4800 9450 4700
-Wire Wire Line
-	9450 4700 9950 4700
-Wire Wire Line
-	9950 4700 9950 4900
-Wire Wire Line
-	9450 4600 9450 4700
-Connection ~ 9450 4700
 NoConn ~ 8400 5700
 Wire Wire Line
 	8400 5600 8600 5600
@@ -1344,11 +1318,6 @@ Wire Wire Line
 	9900 3500 9900 3400
 Wire Wire Line
 	9900 3800 9900 3900
-Connection ~ 9450 5200
-Wire Wire Line
-	10450 4800 10450 4600
-Wire Wire Line
-	10450 5100 10450 5200
 $Comp
 L Device:C C?
 U 1 1 5E151295
@@ -1382,11 +1351,6 @@ Wire Wire Line
 Wire Wire Line
 	4850 4850 5450 4850
 Connection ~ 4850 4850
-Text HLabel 10750 5200 2    50   Input ~ 0
-RESET
-Wire Wire Line
-	10750 5200 10450 5200
-Connection ~ 10450 5200
 $Comp
 L Device:C C110
 U 1 1 5C6BCD28
@@ -1414,17 +1378,6 @@ F 1 "GND" H 8905 5527 50  0000 C CNN
 F 2 "" H 8900 5700 50  0001 C CNN
 F 3 "" H 8900 5700 50  0001 C CNN
 	1    8900 5700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR0137
-U 1 1 5C821550
-P 10450 4600
-F 0 "#PWR0137" H 10450 4450 50  0001 C CNN
-F 1 "+3V3" H 10465 4773 50  0000 C CNN
-F 2 "" H 10450 4600 50  0001 C CNN
-F 3 "" H 10450 4600 50  0001 C CNN
-	1    10450 4600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1564,17 +1517,6 @@ F 3 "" H 4300 7250 50  0001 C CNN
 	1    4300 7250
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Q_NMOS_GSD Q110
-U 1 1 5C85D5B8
-P 9950 5100
-F 0 "Q110" V 10201 5100 50  0000 C CNN
-F 1 "LN235N3T5G " V 10292 5100 50  0000 C CNN
-F 2 "require:SOT-883" V 10383 5100 50  0000 C CNN
-F 3 "~" H 9950 5100 50  0001 C CNN
-	1    9950 5100
-	0    1    1    0   
-$EndComp
 Text Notes 3750 5300 0    50   ~ 0
 N5
 Text Notes 4250 5300 0    50   ~ 0
@@ -1591,4 +1533,6 @@ NoConn ~ 3100 6550
 Connection ~ 3300 7350
 Text Notes 9500 3000 0    50   ~ 0
 TSX-3225, X1E0000210129, 0.8@1k
+Wire Wire Line
+	9450 4600 9450 4800
 $EndSCHEMATC

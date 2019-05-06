@@ -31,12 +31,6 @@ Wire Wire Line
 	4100 2900 4950 2900
 Wire Wire Line
 	4100 3000 4950 3000
-Wire Wire Line
-	4100 1900 4950 1900
-Wire Wire Line
-	4100 2000 4950 2000
-Wire Wire Line
-	4100 2100 4950 2100
 $Comp
 L require:RK3308 U100
 U 3 1 5C8A3C28
@@ -317,24 +311,8 @@ Wire Wire Line
 	10500 4650 11350 4650
 Text HLabel 11350 4850 2    50   Input ~ 0
 BT_WAKE_HOST
-Text HLabel 11350 4950 2    50   Input ~ 0
-PCM_CLK
-Text HLabel 11350 5050 2    50   Input ~ 0
-PCM_SYNC
-Text HLabel 11350 5150 2    50   Input ~ 0
-PCM_OUT
-Text HLabel 11350 5250 2    50   Input ~ 0
-PCM_IN
 Wire Wire Line
 	10500 4850 11350 4850
-Wire Wire Line
-	10500 4950 11350 4950
-Wire Wire Line
-	10500 5050 11350 5050
-Wire Wire Line
-	10500 5150 11350 5150
-Wire Wire Line
-	10500 5250 11350 5250
 NoConn ~ 10500 5950
 NoConn ~ 10500 6050
 NoConn ~ 10500 6350
@@ -412,12 +390,6 @@ Wire Wire Line
 	11350 6150 10500 6150
 Text HLabel 11350 6250 2    50   Input ~ 0
 D20
-Text HLabel 4950 2100 2    50   Input ~ 0
-D16
-Text HLabel 4950 2000 2    50   Input ~ 0
-D15
-Text HLabel 4950 1900 2    50   Input ~ 0
-D14
 Text HLabel 4950 3000 2    50   Input ~ 0
 D13
 Text HLabel 4950 2900 2    50   Input ~ 0
@@ -447,14 +419,6 @@ D2
 NoConn ~ 4100 2400
 NoConn ~ 4100 2200
 NoConn ~ 4100 2300
-Text HLabel 4950 3500 2    50   Input ~ 0
-D17
-Wire Wire Line
-	4950 3500 4100 3500
-Text HLabel 4950 3600 2    50   Input ~ 0
-D18
-Wire Wire Line
-	4100 3600 4950 3600
 Wire Wire Line
 	4100 2500 4950 2500
 Wire Wire Line
@@ -471,4 +435,14 @@ Wire Wire Line
 	4100 3100 4950 3100
 Text HLabel 4950 3100 2    50   Input ~ 0
 RTC_CLK
+NoConn ~ 4100 3500
+NoConn ~ 4100 3600
+NoConn ~ 4100 3200
+NoConn ~ 10500 4950
+NoConn ~ 10500 5050
+NoConn ~ 10500 5150
+NoConn ~ 10500 5250
+NoConn ~ 4100 1900
+NoConn ~ 4100 2000
+NoConn ~ 4100 2100
 $EndSCHEMATC

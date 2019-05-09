@@ -8,55 +8,44 @@
     </head>
     <body>
     <h1>/home/ma/require/hardware/require.sch</h1>
-    <p>2019年03月13日 星期三 17时32分28秒</p>
+    <p>2019年05月09日 星期四 00时53分01秒</p>
     <p>Eeschema 5.0.2-bee76a0~70~ubuntu18.04.1</p>
-    <p><b>Component Count:</b>185</p>
+    <p><b>Component Count:</b>162</p>
     <table>
     <tr><th style='width:640px'>Ref</th><th>Qnty</th><th>Value</th><th>Part</th><th>Footprint</th><th>Description</th><th>Vendor</th></tr>
-    <tr><td>A500</td><td>1</td><td>AH104N2450D1-T</td><td>require:ANT12</td><td>require:ANT_AH104N</td><td></td><td></td></tr>
     <tr><td>C100, C101</td><td>2</td><td>22p</td><td>Device:C</td><td>require:C_0402</td><td>Unpolarized capacitor</td><td></td></tr>
     <tr><td>C110, C200, C206, C207, C226, C229, C255, C257, C265, C269, C310, C311, C312, C313, C314, C315, C316, C317, C318, C319, C320, C321, C322, C323, C324, C325, C326, C330, C351, C352, C401, C402, C406, C411</td><td>34</td><td>0.1u</td><td>Device:C</td><td>require:C_0402</td><td>Unpolarized capacitor</td><td></td></tr>
-    <tr><td>C201, C221, C231, C251, C253</td><td>5</td><td>10u,10V</td><td>Device:C</td><td>require:C_0805</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C201, C221, C231, C251, C253, C254</td><td>6</td><td>10u,10V</td><td>Device:C</td><td>require:C_0805</td><td>Unpolarized capacitor</td><td></td></tr>
     <tr><td>C202, C222, C232, C252, C340</td><td>5</td><td>100p</td><td>Device:C</td><td>require:C_0402</td><td>Unpolarized capacitor</td><td></td></tr>
     <tr><td>C203, C204, C205</td><td>3</td><td>22u</td><td>Device:C</td><td>require:C_0603</td><td>Unpolarized capacitor</td><td></td></tr>
     <tr><td>C208, C405</td><td>2</td><td>2.2u</td><td>Device:C</td><td>require:C_0402</td><td>Unpolarized capacitor</td><td></td></tr>
     <tr><td>C210</td><td>1</td><td>10n</td><td>Device:C</td><td>require:C_0402</td><td>Unpolarized capacitor</td><td></td></tr>
     <tr><td>C223, C225, C233, C300, C301, C302, C350, C400, C410, C510, C511, C540</td><td>12</td><td>10u</td><td>Device:C</td><td>require:C_0603</td><td>Unpolarized capacitor</td><td></td></tr>
     <tr><td>C256, C258</td><td>2</td><td>0.47u</td><td>Device:C</td><td>require:C_0402</td><td>Unpolarized capacitor</td><td></td></tr>
-    <tr><td>C260, C261, C420, C530, C830</td><td>5</td><td>1u</td><td>Device:C</td><td>require:C_0402</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C260, C261, C420, C830</td><td>4</td><td>1u</td><td>Device:C</td><td>require:C_0402</td><td>Unpolarized capacitor</td><td></td></tr>
     <tr><td>C331, C332</td><td>2</td><td>1n</td><td>Device:C</td><td>require:C_0402</td><td>Unpolarized capacitor</td><td></td></tr>
     <tr><td>C500, C501</td><td>2</td><td>C</td><td>Device:C</td><td>require:C_0402</td><td>Unpolarized capacitor</td><td></td></tr>
     <tr><td>C520, C521</td><td>2</td><td>15p</td><td>Device:C</td><td>require:C_0402</td><td>Unpolarized capacitor</td><td></td></tr>
-    <tr><td>D400</td><td>1</td><td>RB521S</td><td>Device:D_Schottky</td><td>require:D_SOD-523</td><td>Schottky diode</td><td></td></tr>
-    <tr><td>D800, D810, D820, D850</td><td>4</td><td>PESDUC3FD5VU</td><td>require:PESDUC3FD5VU</td><td>require:SOT-883</td><td></td><td></td></tr>
-    <tr><td>D840</td><td>1</td><td>LED</td><td>Device:LED</td><td>require:LED_0402</td><td>Light emitting diode</td><td></td></tr>
+    <tr><td>D800, D810, D820</td><td>3</td><td>PESDUC3FD5VU</td><td>require:PESDUC3FD5VU</td><td>require:SOT-883</td><td></td><td></td></tr>
     <tr><td>F229, F269</td><td>2</td><td>180R,1.5A</td><td>Device:Ferrite_Bead</td><td>Inductors_SMD:L_0402</td><td>Ferrite bead</td><td></td></tr>
-    <tr><td>H1, H2</td><td>2</td><td>MountingHole</td><td>Mechanical:MountingHole</td><td>require:MTG_1.8mm_2.4mm_NPL</td><td>Mounting Hole without connection</td><td></td></tr>
-    <tr><td>H3, H4</td><td>2</td><td>MountingHole_Pad</td><td>Mechanical:MountingHole_Pad</td><td>require:MTG_1.8mm_2.4mm_PL</td><td>Mounting Hole with connection</td><td></td></tr>
-    <tr><td>J800</td><td>1</td><td>Molex 105164-0001</td><td>Connector:USB_B_Micro</td><td>require:USB_Micro-B_Molex-105164-0001</td><td>USB Micro Type B connector</td><td></td></tr>
-    <tr><td>L200, L540</td><td>2</td><td>2.2u</td><td>Device:L</td><td>require:L_1008</td><td>Inductor</td><td></td></tr>
-    <tr><td>L220, L230, L250, L251</td><td>4</td><td>2.2u</td><td>Device:L</td><td>require:L_0806</td><td>Inductor</td><td></td></tr>
+    <tr><td>J800, J801</td><td>2</td><td>Molex 105164-0001</td><td>Connector:USB_B_Micro</td><td>require:USB_Micro-B_Molex-105164-0001</td><td>USB Micro Type B connector</td><td></td></tr>
+    <tr><td>L200, L250, L540</td><td>3</td><td>2.2u</td><td>Device:L</td><td>require:L_1008</td><td>Inductor</td><td></td></tr>
+    <tr><td>L220, L230</td><td>2</td><td>2.2u</td><td>Device:L</td><td>require:L_0806</td><td>Inductor</td><td></td></tr>
     <tr><td>L500</td><td>1</td><td>L</td><td>Device:L</td><td>require:L_0402</td><td>Inductor</td><td></td></tr>
-    <tr><td>LP1, LP7, LP14, LP15, RP1, RP18</td><td>6</td><td>G</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
-    <tr><td>LP2</td><td>1</td><td>A1</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
-    <tr><td>LP3</td><td>1</td><td>A2</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
-    <tr><td>LP4</td><td>1</td><td>A3</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
-    <tr><td>LP5</td><td>1</td><td>A4</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
-    <tr><td>LP6</td><td>1</td><td>A5</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
-    <tr><td>LP8</td><td>1</td><td>RST</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
+    <tr><td>LP1, LP7, LP14, RP18</td><td>4</td><td>G</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
+    <tr><td>LP2</td><td>1</td><td>A0</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
+    <tr><td>LP3</td><td>1</td><td>A1</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
+    <tr><td>LP4</td><td>1</td><td>A2</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
+    <tr><td>LP5</td><td>1</td><td>A3</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
     <tr><td>LP9</td><td>1</td><td>DM</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
     <tr><td>LP10</td><td>1</td><td>DP</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
     <tr><td>LP11</td><td>1</td><td>D19</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
     <tr><td>LP12</td><td>1</td><td>D20</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
-    <tr><td>LP13</td><td>1</td><td>NC</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
     <tr><td>LP16, LP17</td><td>2</td><td>3V3</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
     <tr><td>LP18</td><td>1</td><td>5V</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
-    <tr><td>Q110</td><td>1</td><td>LN235N3T5G </td><td>Device:Q_NMOS_GSD</td><td>require:SOT-883</td><td>N-MOSFET transistor, gate/source/drain</td><td></td></tr>
-    <tr><td>Q840</td><td>1</td><td>LMBT3904DW1T1G</td><td>require:NPND_SOT_363</td><td>require:SOT-363_SC-70-6</td><td></td><td></td></tr>
     <tr><td>R50</td><td>1</td><td>240R, 1%</td><td>Device:R</td><td>require:R_0402</td><td>Resistor</td><td></td></tr>
-    <tr><td>R100, R400, R800, R801, R810, R811</td><td>6</td><td>22R</td><td>Device:R</td><td>require:R_0402</td><td>Resistor</td><td></td></tr>
-    <tr><td>R110, R111, R850</td><td>3</td><td>10k</td><td>Device:R</td><td>require:R_0402</td><td>Resistor</td><td></td></tr>
-    <tr><td>R201</td><td>1</td><td>100R</td><td>Device:R</td><td>require:R_0402</td><td>Resistor</td><td></td></tr>
+    <tr><td>R100, R400, R800, R801, R810, R811, R812, R813</td><td>8</td><td>22R</td><td>Device:R</td><td>require:R_0402</td><td>Resistor</td><td></td></tr>
+    <tr><td>R110</td><td>1</td><td>10k</td><td>Device:R</td><td>require:R_0402</td><td>Resistor</td><td></td></tr>
     <tr><td>R202, R233</td><td>2</td><td>100k,1%</td><td>Device:R</td><td>require:R_0402</td><td>Resistor</td><td></td></tr>
     <tr><td>R203, R223, R232</td><td>3</td><td>150k,1%</td><td>Device:R</td><td>require:R_0402</td><td>Resistor</td><td></td></tr>
     <tr><td>R210</td><td>1</td><td>169k,1%</td><td>Device:R</td><td>require:R_0402</td><td>Resistor</td><td></td></tr>
@@ -70,10 +59,8 @@
     <tr><td>R340, R341</td><td>2</td><td>49.9R,1%</td><td>Device:R</td><td>require:R_0402</td><td>Resistor</td><td></td></tr>
     <tr><td>R410</td><td>1</td><td>2.2k</td><td>Device:R</td><td>require:R_0402</td><td>Resistor</td><td></td></tr>
     <tr><td>R700, R701</td><td>2</td><td>51k,1%</td><td>Device:R</td><td>require:R_0402</td><td>Resistor</td><td></td></tr>
-    <tr><td>R802</td><td>1</td><td>0R</td><td>Device:R</td><td>require:R_0603</td><td>Resistor</td><td></td></tr>
     <tr><td>R805</td><td>1</td><td>133R,1%</td><td>Device:R</td><td>require:R_0402</td><td>Resistor</td><td></td></tr>
     <tr><td>R830, R831</td><td>2</td><td>4.7k</td><td>Device:R</td><td>require:R_0402</td><td>Resistor</td><td></td></tr>
-    <tr><td>R840</td><td>1</td><td>470R</td><td>Device:R</td><td>require:R_0402</td><td>Resistor</td><td></td></tr>
     <tr><td>RP2</td><td>1</td><td>1</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
     <tr><td>RP3</td><td>1</td><td>2</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
     <tr><td>RP4</td><td>1</td><td>3</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
@@ -87,20 +74,15 @@
     <tr><td>RP12</td><td>1</td><td>11</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
     <tr><td>RP13</td><td>1</td><td>12</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
     <tr><td>RP14</td><td>1</td><td>13</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
-    <tr><td>RP15</td><td>1</td><td>14</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
-    <tr><td>RP16</td><td>1</td><td>15</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
-    <tr><td>RP17</td><td>1</td><td>16</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
-    <tr><td>RP19</td><td>1</td><td>U</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
-    <tr><td>SW850</td><td>1</td><td>SW_SKSC_4PIN</td><td>require:SW_SKSC_4PIN</td><td>require:SW_ALPS_SKSCLCE010</td><td></td><td></td></tr>
     <tr><td>U100</td><td>1</td><td>RK3308</td><td>require:RK3308</td><td>require:RK3308_TFBGA-355</td><td></td><td></td></tr>
-    <tr><td>U200</td><td>1</td><td>SY8089AAC</td><td>require:SY8089AAC</td><td>TO_SOT_Packages_SMD:SOT-23-5</td><td>1A DC-DC Step Down</td><td></td></tr>
-    <tr><td>U220, U230, U250</td><td>3</td><td>PAM2305CGFADJ</td><td>Regulator_Switching:PAM2305CGFADJ</td><td>require:U-DFN2020-6</td><td>1A, Step-Down DC/DC-Converter, Adjustable Output Voltage, 1.5MHz, DFN-6</td><td></td></tr>
+    <tr><td>U200, U250</td><td>2</td><td>SY8089AAC</td><td>require:SY8089AAC</td><td>require:SOT-23-5</td><td>1A DC-DC Step Down</td><td></td></tr>
+    <tr><td>U220, U230</td><td>2</td><td>PAM2305CGFADJ</td><td>Regulator_Switching:PAM2305CGFADJ</td><td>require:U-DFN2020-6</td><td>1A, Step-Down DC/DC-Converter, Adjustable Output Voltage, 1.5MHz, DFN-6</td><td></td></tr>
     <tr><td>U260</td><td>1</td><td>NCP707CMX180TCG</td><td>require:NCP707_XDFN4</td><td>require:XDFN4</td><td></td><td></td></tr>
-    <tr><td>U300</td><td>1</td><td>DDR3_FBGA96</td><td>require:DDR3_FBGA96</td><td>require:DDR3_BGA_96</td><td></td><td></td></tr>
+    <tr><td>U300</td><td>1</td><td>DDR3_FBGA96</td><td>require:DDR3_FBGA96</td><td>require:DDR3_BGA-96</td><td></td><td></td></tr>
     <tr><td>U400</td><td>1</td><td>EMMC_BGA_153</td><td>require:EMMC_BGA_153</td><td>require:BGA-153_14x14_11.5x13.0mm</td><td></td><td></td></tr>
     <tr><td>U500</td><td>1</td><td>ap6255</td><td>require:ap6255</td><td>require:AP6255_QFP_44</td><td></td><td></td></tr>
     <tr><td>U830</td><td>1</td><td>ATECC608A-MAHDA</td><td>Security:ATECC608A-MAHDA</td><td>require:ATECC_UDFN8</td><td>Cryptographic Co-Processor with Secure Hardware-based 16 Key Storage, ECDSA and ECDH support, I2C, UDFN-8</td><td></td></tr>
-    <tr><td>Y100</td><td>1</td><td>24MHz,12pF,10ppm</td><td>Device:Crystal_GND24</td><td>Crystals:Crystal_SMD_3225-4pin_3.2x2.5mm</td><td>Four pin crystal, GND on pins 2 and 4</td><td></td></tr>
+    <tr><td>Y100</td><td>1</td><td>24MHz,12pF,10ppm</td><td>Device:Crystal_GND24</td><td>Crystals:Crystal_SMD_2016-4pin_2.0x1.6mm</td><td>Four pin crystal, GND on pins 2 and 4</td><td></td></tr>
     <tr><td>Y520</td><td>1</td><td>37.4MHz,9pF,10ppm</td><td>Device:Crystal_GND24</td><td>Crystals:Crystal_SMD_2016-4pin_2.0x1.6mm</td><td>Four pin crystal, GND on pins 2 and 4</td><td></td></tr><!--TABLEROW-->
     </table>
     </body>

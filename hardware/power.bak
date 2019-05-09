@@ -62,19 +62,6 @@ $EndComp
 Wire Wire Line
 	5100 1300 5100 1400
 $Comp
-L Device:R R201
-U 1 1 5CCCBB6C
-P 4100 1550
-AR Path="/5C2CD8AE/5CCCBB6C" Ref="R201"  Part="1" 
-AR Path="/5C325762/5CCCBB6C" Ref="R?"  Part="1" 
-F 0 "R201" H 4200 1600 50  0000 L CNN
-F 1 "100R" H 4200 1500 50  0000 L CNN
-F 2 "require:R_0402" V 4030 1550 50  0001 C CNN
-F 3 "" H 4100 1550 50  0001 C CNN
-	1    4100 1550
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R202
 U 1 1 5CCCBB73
 P 4100 2050
@@ -87,10 +74,6 @@ F 3 "" H 4100 2050 50  0001 C CNN
 	1    4100 2050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4100 1300 4100 1400
-Wire Wire Line
-	4100 1300 4700 1300
 $Comp
 L require:SY8089AAC U200
 U 1 1 5CCCBB80
@@ -263,10 +246,7 @@ F 3 "" H 3150 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4100 1700 4100 1800
-Wire Wire Line
 	4700 1800 4100 1800
-Connection ~ 4100 1800
 Wire Wire Line
 	4700 2200 4700 2300
 Wire Wire Line
@@ -1196,9 +1176,6 @@ Wire Wire Line
 Wire Wire Line
 	3600 1300 3500 1300
 Wire Wire Line
-	3900 1300 4100 1300
-Connection ~ 4100 1300
-Wire Wire Line
 	3750 2300 4100 2300
 Connection ~ 3750 2300
 Wire Wire Line
@@ -1309,4 +1286,6 @@ F 3 "" H 10400 5400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9750 4850 10400 4850
+Wire Wire Line
+	3900 1300 4700 1300
 $EndSCHEMATC

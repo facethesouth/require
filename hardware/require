@@ -8,11 +8,12 @@
     </head>
     <body>
     <h1>/home/ma/require/hardware/require.sch</h1>
-    <p>2019年05月09日 星期四 00时53分01秒</p>
+    <p>2019年05月11日 星期六 00时35分03秒</p>
     <p>Eeschema 5.0.2-bee76a0~70~ubuntu18.04.1</p>
-    <p><b>Component Count:</b>162</p>
+    <p><b>Component Count:</b>166</p>
     <table>
     <tr><th style='width:640px'>Ref</th><th>Qnty</th><th>Value</th><th>Part</th><th>Footprint</th><th>Description</th><th>Vendor</th></tr>
+    <tr><td>ANT1</td><td>1</td><td>ANT_LA52H2450_5500_A28</td><td>require:ANT_LA52H2450_5500_A28</td><td>require:LA52H2450_5500_A28</td><td></td><td></td></tr>
     <tr><td>C100, C101</td><td>2</td><td>22p</td><td>Device:C</td><td>require:C_0402</td><td>Unpolarized capacitor</td><td></td></tr>
     <tr><td>C110, C200, C206, C207, C226, C229, C255, C257, C265, C269, C310, C311, C312, C313, C314, C315, C316, C317, C318, C319, C320, C321, C322, C323, C324, C325, C326, C330, C351, C352, C401, C402, C406, C411</td><td>34</td><td>0.1u</td><td>Device:C</td><td>require:C_0402</td><td>Unpolarized capacitor</td><td></td></tr>
     <tr><td>C201, C221, C231, C251, C253, C254</td><td>6</td><td>10u,10V</td><td>Device:C</td><td>require:C_0805</td><td>Unpolarized capacitor</td><td></td></tr>
@@ -22,7 +23,7 @@
     <tr><td>C210</td><td>1</td><td>10n</td><td>Device:C</td><td>require:C_0402</td><td>Unpolarized capacitor</td><td></td></tr>
     <tr><td>C223, C225, C233, C300, C301, C302, C350, C400, C410, C510, C511, C540</td><td>12</td><td>10u</td><td>Device:C</td><td>require:C_0603</td><td>Unpolarized capacitor</td><td></td></tr>
     <tr><td>C256, C258</td><td>2</td><td>0.47u</td><td>Device:C</td><td>require:C_0402</td><td>Unpolarized capacitor</td><td></td></tr>
-    <tr><td>C260, C261, C420, C830</td><td>4</td><td>1u</td><td>Device:C</td><td>require:C_0402</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C260, C261, C420, C530, C830</td><td>5</td><td>1u</td><td>Device:C</td><td>require:C_0402</td><td>Unpolarized capacitor</td><td></td></tr>
     <tr><td>C331, C332</td><td>2</td><td>1n</td><td>Device:C</td><td>require:C_0402</td><td>Unpolarized capacitor</td><td></td></tr>
     <tr><td>C500, C501</td><td>2</td><td>C</td><td>Device:C</td><td>require:C_0402</td><td>Unpolarized capacitor</td><td></td></tr>
     <tr><td>C520, C521</td><td>2</td><td>15p</td><td>Device:C</td><td>require:C_0402</td><td>Unpolarized capacitor</td><td></td></tr>

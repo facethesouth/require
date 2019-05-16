@@ -8,9 +8,9 @@
     </head>
     <body>
     <h1>/home/ma/require/hardware/require.sch</h1>
-    <p>2019年05月11日 星期六 00时35分03秒</p>
+    <p>2019年05月15日 星期三 21时19分08秒</p>
     <p>Eeschema 5.0.2-bee76a0~70~ubuntu18.04.1</p>
-    <p><b>Component Count:</b>166</p>
+    <p><b>Component Count:</b>168</p>
     <table>
     <tr><th style='width:640px'>Ref</th><th>Qnty</th><th>Value</th><th>Part</th><th>Footprint</th><th>Description</th><th>Vendor</th></tr>
     <tr><td>ANT1</td><td>1</td><td>ANT_LA52H2450_5500_A28</td><td>require:ANT_LA52H2450_5500_A28</td><td>require:LA52H2450_5500_A28</td><td></td><td></td></tr>
@@ -28,25 +28,25 @@
     <tr><td>C500, C501</td><td>2</td><td>C</td><td>Device:C</td><td>require:C_0402</td><td>Unpolarized capacitor</td><td></td></tr>
     <tr><td>C520, C521</td><td>2</td><td>15p</td><td>Device:C</td><td>require:C_0402</td><td>Unpolarized capacitor</td><td></td></tr>
     <tr><td>D800, D810, D820</td><td>3</td><td>PESDUC3FD5VU</td><td>require:PESDUC3FD5VU</td><td>require:SOT-883</td><td></td><td></td></tr>
-    <tr><td>F229, F269</td><td>2</td><td>180R,1.5A</td><td>Device:Ferrite_Bead</td><td>Inductors_SMD:L_0402</td><td>Ferrite bead</td><td></td></tr>
+    <tr><td>F229, F269</td><td>2</td><td>180R,1.5A</td><td>Device:Ferrite_Bead</td><td>require:L_0402</td><td>Ferrite bead</td><td></td></tr>
     <tr><td>J800, J801</td><td>2</td><td>Molex 105164-0001</td><td>Connector:USB_B_Micro</td><td>require:USB_Micro-B_Molex-105164-0001</td><td>USB Micro Type B connector</td><td></td></tr>
     <tr><td>L200, L250, L540</td><td>3</td><td>2.2u</td><td>Device:L</td><td>require:L_1008</td><td>Inductor</td><td></td></tr>
     <tr><td>L220, L230</td><td>2</td><td>2.2u</td><td>Device:L</td><td>require:L_0806</td><td>Inductor</td><td></td></tr>
     <tr><td>L500</td><td>1</td><td>L</td><td>Device:L</td><td>require:L_0402</td><td>Inductor</td><td></td></tr>
-    <tr><td>LP1, LP7, LP14, RP18</td><td>4</td><td>G</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
-    <tr><td>LP2</td><td>1</td><td>A0</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
-    <tr><td>LP3</td><td>1</td><td>A1</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
+    <tr><td>LP1</td><td>1</td><td>3V3</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
+    <tr><td>LP2, LP7, RP14</td><td>3</td><td>G</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
+    <tr><td>LP3</td><td>1</td><td>A0</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
     <tr><td>LP4</td><td>1</td><td>A2</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
-    <tr><td>LP5</td><td>1</td><td>A3</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
+    <tr><td>LP5</td><td>1</td><td>D19</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
+    <tr><td>LP6</td><td>1</td><td>D20</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
+    <tr><td>LP8</td><td>1</td><td>5V</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
     <tr><td>LP9</td><td>1</td><td>DM</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
     <tr><td>LP10</td><td>1</td><td>DP</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
-    <tr><td>LP11</td><td>1</td><td>D19</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
-    <tr><td>LP12</td><td>1</td><td>D20</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
-    <tr><td>LP16, LP17</td><td>2</td><td>3V3</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
-    <tr><td>LP18</td><td>1</td><td>5V</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
+    <tr><td>LP31</td><td>1</td><td>A1</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
+    <tr><td>LP41</td><td>1</td><td>A3</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
     <tr><td>R50</td><td>1</td><td>240R, 1%</td><td>Device:R</td><td>require:R_0402</td><td>Resistor</td><td></td></tr>
-    <tr><td>R100, R400, R800, R801, R810, R811, R812, R813</td><td>8</td><td>22R</td><td>Device:R</td><td>require:R_0402</td><td>Resistor</td><td></td></tr>
-    <tr><td>R110</td><td>1</td><td>10k</td><td>Device:R</td><td>require:R_0402</td><td>Resistor</td><td></td></tr>
+    <tr><td>R100, R400, R800, R801, R810, R811, R812, R813, R820, R821</td><td>10</td><td>22R</td><td>Device:R</td><td>require:R_0402</td><td>Resistor</td><td></td></tr>
+    <tr><td>R110, R840, R841</td><td>3</td><td>10k</td><td>Device:R</td><td>require:R_0402</td><td>Resistor</td><td></td></tr>
     <tr><td>R202, R233</td><td>2</td><td>100k,1%</td><td>Device:R</td><td>require:R_0402</td><td>Resistor</td><td></td></tr>
     <tr><td>R203, R223, R232</td><td>3</td><td>150k,1%</td><td>Device:R</td><td>require:R_0402</td><td>Resistor</td><td></td></tr>
     <tr><td>R210</td><td>1</td><td>169k,1%</td><td>Device:R</td><td>require:R_0402</td><td>Resistor</td><td></td></tr>
@@ -62,19 +62,19 @@
     <tr><td>R700, R701</td><td>2</td><td>51k,1%</td><td>Device:R</td><td>require:R_0402</td><td>Resistor</td><td></td></tr>
     <tr><td>R805</td><td>1</td><td>133R,1%</td><td>Device:R</td><td>require:R_0402</td><td>Resistor</td><td></td></tr>
     <tr><td>R830, R831</td><td>2</td><td>4.7k</td><td>Device:R</td><td>require:R_0402</td><td>Resistor</td><td></td></tr>
-    <tr><td>RP2</td><td>1</td><td>1</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
-    <tr><td>RP3</td><td>1</td><td>2</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
-    <tr><td>RP4</td><td>1</td><td>3</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
-    <tr><td>RP5</td><td>1</td><td>4</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
-    <tr><td>RP6</td><td>1</td><td>5</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
-    <tr><td>RP7</td><td>1</td><td>6</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
-    <tr><td>RP8</td><td>1</td><td>7</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
-    <tr><td>RP9</td><td>1</td><td>8</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
-    <tr><td>RP10</td><td>1</td><td>9</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
-    <tr><td>RP11</td><td>1</td><td>10</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
-    <tr><td>RP12</td><td>1</td><td>11</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
-    <tr><td>RP13</td><td>1</td><td>12</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
-    <tr><td>RP14</td><td>1</td><td>13</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
+    <tr><td>RP1</td><td>1</td><td>1</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
+    <tr><td>RP2</td><td>1</td><td>2</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
+    <tr><td>RP3</td><td>1</td><td>3</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
+    <tr><td>RP4</td><td>1</td><td>4</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
+    <tr><td>RP5</td><td>1</td><td>5</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
+    <tr><td>RP6</td><td>1</td><td>6</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
+    <tr><td>RP7</td><td>1</td><td>7</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
+    <tr><td>RP8</td><td>1</td><td>8</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
+    <tr><td>RP9</td><td>1</td><td>9</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
+    <tr><td>RP10</td><td>1</td><td>10</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
+    <tr><td>RP11</td><td>1</td><td>11</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
+    <tr><td>RP12</td><td>1</td><td>12</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
+    <tr><td>RP13</td><td>1</td><td>13</td><td>require:OP</td><td>require:OVAL_PIN</td><td></td><td></td></tr>
     <tr><td>U100</td><td>1</td><td>RK3308</td><td>require:RK3308</td><td>require:RK3308_TFBGA-355</td><td></td><td></td></tr>
     <tr><td>U200, U250</td><td>2</td><td>SY8089AAC</td><td>require:SY8089AAC</td><td>require:SOT-23-5</td><td>1A DC-DC Step Down</td><td></td></tr>
     <tr><td>U220, U230</td><td>2</td><td>PAM2305CGFADJ</td><td>Regulator_Switching:PAM2305CGFADJ</td><td>require:U-DFN2020-6</td><td>1A, Step-Down DC/DC-Converter, Adjustable Output Voltage, 1.5MHz, DFN-6</td><td></td></tr>
@@ -83,8 +83,8 @@
     <tr><td>U400</td><td>1</td><td>EMMC_BGA_153</td><td>require:EMMC_BGA_153</td><td>require:BGA-153_14x14_11.5x13.0mm</td><td></td><td></td></tr>
     <tr><td>U500</td><td>1</td><td>ap6255</td><td>require:ap6255</td><td>require:AP6255_QFP_44</td><td></td><td></td></tr>
     <tr><td>U830</td><td>1</td><td>ATECC608A-MAHDA</td><td>Security:ATECC608A-MAHDA</td><td>require:ATECC_UDFN8</td><td>Cryptographic Co-Processor with Secure Hardware-based 16 Key Storage, ECDSA and ECDH support, I2C, UDFN-8</td><td></td></tr>
-    <tr><td>Y100</td><td>1</td><td>24MHz,12pF,10ppm</td><td>Device:Crystal_GND24</td><td>Crystals:Crystal_SMD_2016-4pin_2.0x1.6mm</td><td>Four pin crystal, GND on pins 2 and 4</td><td></td></tr>
-    <tr><td>Y520</td><td>1</td><td>37.4MHz,9pF,10ppm</td><td>Device:Crystal_GND24</td><td>Crystals:Crystal_SMD_2016-4pin_2.0x1.6mm</td><td>Four pin crystal, GND on pins 2 and 4</td><td></td></tr><!--TABLEROW-->
+    <tr><td>Y100</td><td>1</td><td>24MHz,12pF,10ppm</td><td>Device:Crystal_GND24</td><td>require:Crystal_SMD_2016-4pin_2.0x1.6mm</td><td>Four pin crystal, GND on pins 2 and 4</td><td></td></tr>
+    <tr><td>Y520</td><td>1</td><td>37.4MHz,9pF,10ppm</td><td>Device:Crystal_GND24</td><td>require:Crystal_SMD_2016-4pin_2.0x1.6mm</td><td>Four pin crystal, GND on pins 2 and 4</td><td></td></tr><!--TABLEROW-->
     </table>
     </body>
 </html>

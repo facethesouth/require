@@ -25,12 +25,6 @@ F 3 "" H 2500 3700 60  0001 C CNN
 	2    2500 3700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4100 2800 4950 2800
-Wire Wire Line
-	4100 2900 4950 2900
-Wire Wire Line
-	4100 3000 4950 3000
 $Comp
 L require:RK3308 U100
 U 3 1 5C8A3C28
@@ -42,14 +36,6 @@ F 3 "" H 900 7000 60  0001 C CNN
 	3    900  7000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4100 6600 5100 6600
-Wire Wire Line
-	4100 6700 5100 6700
-Wire Wire Line
-	4100 6800 5100 6800
-Wire Wire Line
-	4100 6900 5100 6900
 $Comp
 L require:RK3308 U100
 U 4 1 5C8B044F
@@ -61,14 +47,6 @@ F 3 "" H 1900 9400 60  0001 C CNN
 	4    1900 9400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4100 7900 4750 7900
-Wire Wire Line
-	4100 7800 4750 7800
-Wire Wire Line
-	4100 7700 4750 7700
-Wire Wire Line
-	4100 7600 4750 7600
 $Comp
 L require:RK3308 U100
 U 5 1 5C8BEDB2
@@ -82,10 +60,6 @@ F 3 "" H 8300 2850 60  0001 C CNN
 $EndComp
 Wire Wire Line
 	10500 2550 11350 2550
-Wire Wire Line
-	10500 2650 11350 2650
-Wire Wire Line
-	10500 2750 11350 2750
 NoConn ~ 10500 2450
 $Comp
 L require:RK3308 U100
@@ -390,32 +364,6 @@ Wire Wire Line
 	11350 6150 10500 6150
 Text HLabel 11350 6250 2    50   Input ~ 0
 D20
-Text HLabel 4950 3000 2    50   Input ~ 0
-D13
-Text HLabel 4950 2900 2    50   Input ~ 0
-D12
-Text HLabel 4950 2800 2    50   Input ~ 0
-D11
-Text HLabel 5100 6900 2    50   Input ~ 0
-D10
-Text HLabel 5100 6800 2    50   Input ~ 0
-D9
-Text HLabel 5100 6700 2    50   Input ~ 0
-D8
-Text HLabel 5100 6600 2    50   Input ~ 0
-D7
-Text HLabel 4750 7900 2    50   Input ~ 0
-D6
-Text HLabel 4750 7800 2    50   Input ~ 0
-D5
-Text HLabel 4750 7700 2    50   Input ~ 0
-D4
-Text HLabel 4750 7600 2    50   Input ~ 0
-D3
-Text HLabel 11350 2650 2    50   Input ~ 0
-D1
-Text HLabel 11350 2750 2    50   Input ~ 0
-D2
 NoConn ~ 4100 2400
 NoConn ~ 4100 2200
 NoConn ~ 4100 2300
@@ -445,4 +393,16 @@ NoConn ~ 10500 5250
 NoConn ~ 4100 1900
 NoConn ~ 4100 2000
 NoConn ~ 4100 2100
+NoConn ~ 4100 2800
+NoConn ~ 4100 2900
+NoConn ~ 4100 3000
+NoConn ~ 4100 6600
+NoConn ~ 4100 6700
+NoConn ~ 4100 6800
+NoConn ~ 4100 6900
+NoConn ~ 4100 7600
+NoConn ~ 4100 7700
+NoConn ~ 4100 7800
+NoConn ~ 4100 7900
+NoConn ~ 10500 2650
 $EndSCHEMATC

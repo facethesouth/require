@@ -10,6 +10,11 @@ D Power flag, +1.0V
 K power-flag
 $ENDCMP
 #
+$CMP +1V2J
+D Power flag, +1.2V
+K power-flag
+$ENDCMP
+#
 $CMP +1V8A
 D Power flag, +1.8V
 K power-flag
@@ -21,6 +26,11 @@ K power-flag
 $ENDCMP
 #
 $CMP +3V3EMMC
+D Power flag, +3.3V
+K power-flag
+$ENDCMP
+#
+$CMP +3V3J
 D Power flag, +3.3V
 K power-flag
 $ENDCMP
